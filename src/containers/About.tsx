@@ -9,7 +9,7 @@ export const About = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-5 col-lg-4">
           <ul className="info">
             <li>
               <span className="first-block">Full Name:</span>
@@ -35,7 +35,7 @@ export const About = () => (
             </li>
           </ul>
         </div>
-        <div className="col-md-8">
+        <div className="col-md-7 col-lg-8">
           <h2>Hello There!</h2>
           <p>
             I am a full stack developer. After five years of study at ETNA. I
