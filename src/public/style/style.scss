@@ -1270,5 +1270,12 @@ input[type="text"] {
 .animate-box {
 	.js & {
 		opacity: 0;
+		&.animation-end {
+			opacity: 1;
+		}
+	}
+	&.animated.faster{
+		-webkit-animation-duration:.5s;
+		animation-duration:.5s;
 	}
 }
