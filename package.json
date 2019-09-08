@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node server.ts",
     "build": "webpack --config ./webpack.config.prod.js",
-    "dev": "webpack-dev-server  --config ./webpack.config.dev.js"
+    "dev": "webpack-dev-server  --config ./webpack.config.dev.js",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",

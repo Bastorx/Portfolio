@@ -10,6 +10,9 @@ module.exports = {
   },
   plugins: config.plugins.concat([
     new CleanWebpackPlugin(),
-    new CopyPlugin([{ from: "src/public/favicon" }])
+    new CopyPlugin([
+      { from: "src/public/favicon" },
+      { from: "src/public/sitemap" }
+    ])
   ])
 };
