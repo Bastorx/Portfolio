@@ -9,7 +9,7 @@ export const About = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-md-5 col-lg-4">
+        <div className="col-xs-12 col-md-6 col-lg-5">
           <ul className="info">
             <li>
               <span className="first-block">Full Name:</span>
@@ -17,25 +17,29 @@ export const About = () => (
             </li>
             <li>
               <span className="first-block">Phone:</span>
-              <span className="second-block">(+33) 6 12 15 74 63</span>
+              <span className="second-block">
+                <a href="tel:+33612157463">(+33) 6 12 15 74 63</a>
+              </span>
             </li>
             <li>
               <span className="first-block">Email:</span>
-              <span className="second-block">me@bastienchevallier.com</span>
+              <span className="second-block">
+                <a href="mailto:me@bastienchevallier.com">
+                  me@bastienchevallier.com
+                </a>
+              </span>
             </li>
             <li>
               <span className="first-block">Website:</span>
-              <span className="second-block">www.bastienchevallier.com</span>
-            </li>
-            <li>
-              <span className="first-block">Address:</span>
               <span className="second-block">
-                4 Rue de la Huchette, 75005 Paris
+                <a href="https://www.bastienchevallier.com">
+                  www.bastienchevallier.com
+                </a>
               </span>
             </li>
           </ul>
         </div>
-        <div className="col-md-7 col-lg-8">
+        <div className="col-xs-12 col-md-6 col-lg-7">
           <h2>Hello There!</h2>
           <p>
             I am a full stack developer. After five years of study at ETNA. I

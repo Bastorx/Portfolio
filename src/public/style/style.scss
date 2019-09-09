@@ -382,7 +382,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .info{
 	margin: 0;
 	padding: 0;
-	width: 90%;
+	width: 100%;
 	float: left;
 	@media screen and (max-width: $screen-sm) {
 		margin-bottom: 3em;
@@ -396,16 +396,28 @@ h1, h2, h3, h4, h5, h6, figure {
 			padding-top: 0;
 		}
 		.first-block{
-			width: 40%;
+			width: 35%;
 			display: inline-block;
 			float: left;
 			color: $brand-black;
 			font-weight: bold;
+			@media screen and (max-width: 400px) {
+				width: 30%;
+			}
+			@media screen and (max-width: 370px) {
+				display: none;
+			}
 		}
 		.second-block{
-			width: 60%;
+			color: $color-primary-0;
+			width: 65%;
 			display: inline-block;
-			color: rgba($brand-black,.5);
+			@media screen and (max-width: 400px) {
+				width: 70%;
+			}
+			@media screen and (max-width: 370px) {
+				width: 100%;
+			}
 		}
 	}
 }
