@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const PreloadWebpackPlugin = require("preload-webpack-plugin");
 
 module.exports = {
   target: "web",
@@ -59,6 +60,7 @@ module.exports = {
         collapseWhitespace: true,
         useShortDoctype: true
       }
-    })
+    }),
+    new PreloadWebpackPlugin()
   ]
 };
