@@ -6,6 +6,7 @@ module.exports = {
   ...config,
   mode: "production",
   optimization: {
+    ...config.optimization,
     minimize: true
   },
   plugins: config.plugins.concat([

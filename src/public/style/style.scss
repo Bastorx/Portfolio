@@ -72,16 +72,16 @@ $form-group-margin-bottom:       30px !default;
 	-moz-flex-wrap: wrap; 
 }
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('./icomoon/fonts/icomoon.eot?srf3rx');
-	src:url('./icomoon/fonts/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
-		url('./icomoon/fonts/icomoon.ttf?srf3rx') format('truetype'),
-		url('./icomoon/fonts/icomoon.woff?srf3rx') format('woff'),
-		url('./icomoon/fonts/icomoon.svg?srf3rx#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: 'icomoon';
+// 	src:url('./icomoon/fonts/icomoon.eot?srf3rx');
+// 	src:url('./icomoon/fonts/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
+// 		url('./icomoon/fonts/icomoon.ttf?srf3rx') format('truetype'),
+// 		url('./icomoon/fonts/icomoon.woff?srf3rx') format('woff'),
+// 		url('./icomoon/fonts/icomoon.svg?srf3rx#icomoon') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 
 @mixin icomoon() {
 	
