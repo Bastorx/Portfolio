@@ -13,25 +13,10 @@ export const Features = () => (
           <div className="col-md-4 text-center">
             <div className="feature-left">
               <span className="icon">
-                <i className="icon-paintbrush"></i>
+                <i className="icon-bargraph"></i>
               </span>
               <div className="feature-copy">
-                <h3>Web Design</h3>
-                <p>
-                  Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
-                  reprehenderit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 text-center">
-            <div className="feature-left">
-              <span className="icon">
-                <i className="icon-briefcase"></i>
-              </span>
-              <div className="feature-copy">
-                <h3>Branding</h3>
+                <h3>Web Developent</h3>
                 <p>
                   Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
                   reprehenderit.
@@ -46,38 +31,6 @@ export const Features = () => (
               </span>
               <div className="feature-copy">
                 <h3>Analytics</h3>
-                <p>
-                  Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
-                  reprehenderit.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-md-4 text-center">
-            <div className="feature-left">
-              <span className="icon">
-                <i className="icon-bargraph"></i>
-              </span>
-              <div className="feature-copy">
-                <h3>Web Developent</h3>
-                <p>
-                  Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
-                  reprehenderit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 text-center">
-            <div className="feature-left">
-              <span className="icon">
-                <i className="icon-genius"></i>
-              </span>
-              <div className="feature-copy">
-                <h3>Web Marketing</h3>
                 <p>
                   Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
                   reprehenderit.
