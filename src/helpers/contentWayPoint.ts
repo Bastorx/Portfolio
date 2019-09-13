@@ -1,4 +1,5 @@
 export const contentWayPoint = () => {
+  if (!$) { return; }
   $(".animate-box").waypoint(
     function(direction: any) {
       if (direction === "down" && !$(this.element).hasClass("animation-end")) {

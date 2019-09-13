@@ -29,11 +29,13 @@ const isMobile = {
 
 export class Header extends Component {
   public componentDidMount() {
-    if (!isMobile.any()) {
-      $(".js-fullheight").css("height", $(window).height());
-      $(window).resize(() => {
+    if (typeof $ !== "undefined") {
+      if (!isMobile.any()) {
         $(".js-fullheight").css("height", $(window).height());
-      });
+        $(window).resize(() => {
+          $(".js-fullheight").css("height", $(window).height());
+        });
+      }
     }
   }
   public render() {

@@ -53,14 +53,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      minify: {
-        removeAttributeQuotes: true,
-        collapseInlineTagWhitespace: true,
-        collapseWhitespace: true,
-        useShortDoctype: true
-      }
-    }),
-    new PreloadWebpackPlugin()
+      filename: "index.html",
+      template: "!!prerender-loader?!./src/index.html"
+      // minify: {
+      //   removeAttributeQuotes: true,
+      //   collapseInlineTagWhitespace: true,
+      //   collapseWhitespace: true,
+      //   useShortDoctype: true
+      // }
+    })
   ]
 };

@@ -15,10 +15,12 @@ import {
 
 export class App extends Component {
   public componentDidMount() {
-    $(window).stellar();
+    if (typeof $ !== "undefined") {
+      $(window).stellar();
 
-    // To fix
-    contentWayPoint();
+      // To fix
+      contentWayPoint();
+    }
   }
   public render() {
     return (
