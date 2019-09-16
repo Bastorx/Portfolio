@@ -115,8 +115,7 @@ export const Resume = () => (
                 </div>
               </div>
             </li>
-            <br />
-            <li className="timeline-heading text-center animate-box">
+            <li className="timeline-heading text-center animate-box" style="margin-top: 44px;">
               <div>
                 <h3>Education</h3>
               </div>

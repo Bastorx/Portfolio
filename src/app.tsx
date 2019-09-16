@@ -1,6 +1,12 @@
-import "./public/style/style.scss";
-
 import { h, render } from "preact";
 import { App } from "./containers/page/App";
 
-render(<App />, document.getElementById("app"));
+if (window && window.location && window.location.host === "prerender") {
+  require("./public/style/style.scss");
+}
+
+render(
+  <App />,
+  document.getElementById("app"),
+  document.getElementById("page")
+);

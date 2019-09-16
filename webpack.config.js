@@ -1,6 +1,4 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const PreloadWebpackPlugin = require("preload-webpack-plugin");
 
 module.exports = {
   target: "web",
@@ -51,16 +49,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "!!prerender-loader?!./src/index.html"
-      // minify: {
-      //   removeAttributeQuotes: true,
-      //   collapseInlineTagWhitespace: true,
-      //   collapseWhitespace: true,
-      //   useShortDoctype: true
-      // }
-    })
-  ]
+  plugins: []
 };
