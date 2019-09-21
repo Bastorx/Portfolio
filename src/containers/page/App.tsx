@@ -8,8 +8,8 @@ import {
   Resume,
   // Features,
   Skills,
-  HireMe
-  // Blog,
+  HireMe,
+  Blog
   // ContactForm
 } from "..";
 
@@ -31,7 +31,7 @@ export class App extends Component {
         {/* <Features /> */}
         <Skills />
         {/* <Work /> */}
-        {/* <Blog /> */}
+        <Blog />
         <HireMe />
         {/* <ContactForm /> */}
       </div>

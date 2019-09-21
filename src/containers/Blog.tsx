@@ -1,42 +1,52 @@
 import { h } from "preact";
+import DevToSvg from "../public/images/dev-to.svg";
 
 export const Blog = () => (
   <div id="fh5co-blog">
     <div className="container">
       <div className="row animate-box">
         <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-          <h2>Post on Medium</h2>
-          <p>
-            Dignissimos asperiores vitae velit veniam totam fuga molestias
-            accusamus alias autem provident. Odit ab aliquam dolor eius.
-          </p>
+          <h2>
+            Post on
+            <a href="https://dev.to">
+              <DevToSvg className="logo-dev-to" />
+            </a>
+          </h2>
+          <p>I develop, I watch, I share</p>
         </div>
       </div>
       <div className="row">
+        <div className="col-md-4"></div>
         <div className="col-md-4">
           <div className="fh5co-blog animate-box">
             <a
-              href="#"
+              href="https://dev.to/bastorx/many-ways-to-use-apollo-28l9"
               className="blog-bg"
-              style="background-image: url(images/portfolio-1.jpg);"></a>
+              style={{
+                backgroundImage: `url(${require("../public/images/react-apollo.png")})`,
+                backgroundSize: "contain",
+                backgroundColor: "rgba(10, 216, 188, .23)"
+              }}></a>
             <div className="blog-text">
-              <span className="posted_on">Mar. 15th 2016</span>
+              <span className="posted_on">Sep. 21th 2019</span>
               <h3>
-                <a href="#">Photoshoot On The Street</a>
+                <a href="https://dev.to/bastorx/many-ways-to-use-apollo-28l9">
+                  Many ways to use Apollo
+                </a>
               </h3>
               <p>
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
               </p>
               <ul className="stuff">
-                <li>
+                {/* <li>
                   <i className="icon-heart2"></i>249
                 </li>
                 <li>
                   <i className="icon-eye2"></i>308
-                </li>
+                </li> */}
                 <li>
-                  <a href="#">
+                  <a href="https://dev.to/bastorx/many-ways-to-use-apollo-28l9">
                     Read More<i className="icon-arrow-right22"></i>
                   </a>
                 </li>
@@ -44,68 +54,7 @@ export const Blog = () => (
             </div>
           </div>
         </div>
-        <div className="col-md-4">
-          <div className="fh5co-blog animate-box">
-            <a
-              href="#"
-              className="blog-bg"
-              style="background-image: url(images/portfolio-2.jpg);"></a>
-            <div className="blog-text">
-              <span className="posted_on">Mar. 15th 2016</span>
-              <h3>
-                <a href="#">Surfing at Philippines</a>
-              </h3>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-              <ul className="stuff">
-                <li>
-                  <i className="icon-heart2"></i>249
-                </li>
-                <li>
-                  <i className="icon-eye2"></i>308
-                </li>
-                <li>
-                  <a href="#">
-                    Read More<i className="icon-arrow-right22"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="fh5co-blog animate-box">
-            <a
-              href="#"
-              className="blog-bg"
-              style="background-image: url(images/portfolio-3.jpg);"></a>
-            <div className="blog-text">
-              <span className="posted_on">Mar. 15th 2016</span>
-              <h3>
-                <a href="#">Capture Living On Uderwater</a>
-              </h3>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-              <ul className="stuff">
-                <li>
-                  <i className="icon-heart2"></i>249
-                </li>
-                <li>
-                  <i className="icon-eye2"></i>308
-                </li>
-                <li>
-                  <a href="#">
-                    Read More<i className="icon-arrow-right22"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <div className="col-md-4"></div>
       </div>
     </div>
   </div>

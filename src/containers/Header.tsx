@@ -59,7 +59,7 @@ export class Header extends Component {
                   <div
                     className="profile-thumb"
                     style={{
-                      background: `url(${require("./bastien.jpg")}`
+                      background: `url(${require("../public/images/bastien.jpg")}`
                     }}></div>
                   <h1>
                     <span>Bastien Chevallier</span>

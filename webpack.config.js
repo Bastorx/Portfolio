@@ -22,7 +22,11 @@ module.exports = {
     }
   },
   resolve: {
-    extensions: [".mjs", ".js", ".jsx", ".json", ".ts", ".tsx"]
+    extensions: [".mjs", ".js", ".jsx", ".json", ".ts", ".tsx"],
+    alias: {
+      react: "preact-compat",
+      "react-dom": "preact-compat"
+    }
   },
   module: {
     rules: [
@@ -36,7 +40,7 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg|png|jp(e)?g|gif)$/,
+        test: /\.(woff(2)?|ttf|eot|png|jp(e)?g|gif)$/,
         use: [
           {
             loader: "file-loader"
@@ -45,7 +49,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loader: "svg-inline-loader"
+        use: ["@svgr/webpack"]
       }
     ]
   },
