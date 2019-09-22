@@ -35,8 +35,11 @@ export const Blog = () => (
                 </a>
               </h3>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                Apollo has established itself as the most widely used package to
+                use GraphQL on the client side with React.
+                <br />
+                In each version, the usage of Apollo has evolved considerably.
+                There are several ways to use Apollo.
               </p>
               <ul className="stuff">
                 {/* <li>
