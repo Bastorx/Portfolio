@@ -1,6 +1,6 @@
 export * from "./About";
 export * from "./ContactForm";
-export * from "./Features";
+export * from "./Services";
 export * from "./Header";
 export * from "./HireMe";
 export * from "./Resume";

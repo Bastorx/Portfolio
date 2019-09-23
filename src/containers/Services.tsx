@@ -1,6 +1,6 @@
 import { h } from "preact";
 
-export const Features = () => (
+export const Services = () => (
   <div id="fh5co-features" className="animate-box">
     <div className="container">
       <div className="services-padding">
@@ -18,8 +18,8 @@ export const Features = () => (
               <div class="feature-copy">
                 <h3>Front-End Integration</h3>
                 <p>
-                  Experienced in a lot of Front-End javascript technologies such
-                  as React, Vue, Angular, JQuery and even VanillaJS.
+                  Experienced in many front-end javascript technologies such as
+                  React, Vue, Angular, JQuery and even VanillaJS.
                 </p>
               </div>
             </div>
@@ -32,7 +32,7 @@ export const Features = () => (
               <div className="feature-copy">
                 <h3>Web Development</h3>
                 <p>
-                  Experienced in a lot of Back-end technologies such as NodeJS,
+                  Experience in many back-end technologies such as NodeJS,
                   Typescript, Go.
                 </p>
               </div>
@@ -46,7 +46,7 @@ export const Features = () => (
               <div class="feature-copy">
                 <h3>Mobile Development</h3>
                 <p>
-                  I worked a lot with technologies such as React-Native &
+                  I have worked a lot with technologies such as React-Native &
                   NativeScript.
                 </p>
               </div>
@@ -62,8 +62,8 @@ export const Features = () => (
               <div className="feature-copy">
                 <h3>Cloud solutions</h3>
                 <p>
-                  I worked with great cloud providers such as Google Cloud
-                  Platform, AWS and Azure.
+                  I have worked with leading cloud computing providers such as
+                  GCP, AWS and Azure.
                 </p>
               </div>
             </div>
@@ -76,9 +76,9 @@ export const Features = () => (
               <div className="feature-copy">
                 <h3>Analytics | SEO | SEA</h3>
                 <p>
-                  My experience makes me learn about mains problems around
-                  referencement and Data Analise. I mainly work with Google
-                  tools to avoid any referencement problems.
+                  My experience has given me the opportunity to familiarize
+                  myself with the main issues related to referencing and data
+                  analysis.
                 </p>
               </div>
             </div>
@@ -91,8 +91,8 @@ export const Features = () => (
               <div className="feature-copy">
                 <h3>Support</h3>
                 <p>
-                  Availability and communication are really important. I can
-                  provider supports solutions on each features I have worked.
+                  Availability and communication are very important values. I
+                  offer support solutions around web development.
                 </p>
               </div>
             </div>

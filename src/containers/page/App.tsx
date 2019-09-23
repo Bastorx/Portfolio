@@ -6,7 +6,7 @@ import {
   // Work,
   Header,
   Resume,
-  Features,
+  Services,
   Skills,
   HireMe,
   Blog
@@ -28,7 +28,7 @@ export class App extends Component {
         <Header />
         <About />
         <Resume />
-        <Features />
+        <Services />
         <Skills />
         {/* <Work /> */}
         <Blog />
