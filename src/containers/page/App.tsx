@@ -1,4 +1,6 @@
-import { h, Component } from "preact";
+import React, { Component, Suspense } from "react";
+import { withTranslation, WithTranslation } from "react-i18next";
+
 import { contentWayPoint } from "../../helpers";
 
 import {
@@ -24,17 +26,21 @@ export class App extends Component {
   }
   public render() {
     return (
-      <div id="page">
-        <Header />
-        <About />
-        <Resume />
-        <Services />
-        <Skills />
-        {/* <Work /> */}
-        <Blog />
-        <HireMe />
-        {/* <ContactForm /> */}
-      </div>
+      <Suspense fallback="loading">
+        <div id="page">
+          <Header />
+          <About />
+          <Resume />
+          <Services />
+          <Skills />
+          {/* <Work /> */}
+          <Blog />
+          <HireMe />
+          {/* <ContactForm /> */}
+        </div>
+      </Suspense>
     );
   }
 }
+
+export default App;

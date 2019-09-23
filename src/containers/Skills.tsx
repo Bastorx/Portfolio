@@ -1,4 +1,4 @@
-import { h, Component } from "preact";
+import React, { Component } from "react";
 
 export class Skills extends Component {
   public componentDidMount() {
@@ -105,10 +105,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-1 progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:90%"></div>
+                    aria-valuenow={90}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "90%" }}></div>
                 </div>
               </div>
               <div className="progress-wrap">
@@ -120,10 +120,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-2 progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:90%"></div>
+                    aria-valuenow={90}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "90%" }}></div>
                 </div>
               </div>
               <div className="progress-wrap">
@@ -135,10 +135,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-3 progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:80%"></div>
+                    aria-valuenow={80}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "80%" }}></div>
                 </div>
               </div>
               <div className="progress-wrap">
@@ -150,10 +150,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-4 progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:75%"></div>
+                    aria-valuenow={85}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "75%" }}></div>
                 </div>
               </div>
             </div>
@@ -167,10 +167,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-5 progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:100%"></div>
+                    aria-valuenow={100}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "100%" }}></div>
                 </div>
               </div>
               <div className="progress-wrap">
@@ -182,10 +182,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:70%"></div>
+                    aria-valuenow={70}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "70%" }}></div>
                 </div>
               </div>
               <div className="progress-wrap">
@@ -197,10 +197,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-1 progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:50%"></div>
+                    aria-valuenow={85}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "50%" }}></div>
                 </div>
               </div>
               <div className="progress-wrap">
@@ -212,10 +212,10 @@ export class Skills extends Component {
                   <div
                     className="progress-bar progress-bar-3 progress-bar-striped active"
                     role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width:25%"></div>
+                    aria-valuenow={75}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    style={{ width: "25%" }}></div>
                 </div>
               </div>
             </div>

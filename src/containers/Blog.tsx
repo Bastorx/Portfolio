@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 import DevToSvg from "../public/images/dev-to.svg";
 
 export const Blog = () => (

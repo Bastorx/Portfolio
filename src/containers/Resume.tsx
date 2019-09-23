@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 
 export const Resume = () => (
   <div id="fh5co-resume" className="fh5co-bg-color">
@@ -115,7 +115,9 @@ export const Resume = () => (
                 </div>
               </div>
             </li>
-            <li className="timeline-heading text-center animate-box" style="margin-top: 44px;">
+            <li
+              className="timeline-heading text-center animate-box"
+              style={{ marginTop: 44 }}>
               <div>
                 <h3>Education</h3>
               </div>

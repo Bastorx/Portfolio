@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 
 export const Services = () => (
   <div id="fh5co-features" className="animate-box">
@@ -9,13 +9,13 @@ export const Services = () => (
             <h2>My Services</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <div class="feature-left">
-              <span class="icon">
-                <i class="icon-paintbrush"></i>
+        <div className="row">
+          <div className="col-md-4 text-center">
+            <div className="feature-left">
+              <span className="icon">
+                <i className="icon-paintbrush"></i>
               </span>
-              <div class="feature-copy">
+              <div className="feature-copy">
                 <h3>Front-End Integration</h3>
                 <p>
                   Experienced in many front-end javascript technologies such as
@@ -38,12 +38,12 @@ export const Services = () => (
               </div>
             </div>
           </div>
-          <div class="col-md-4 text-center">
-            <div class="feature-left">
-              <span class="icon">
-                <i class="icon-mobile"></i>
+          <div className="col-md-4 text-center">
+            <div className="feature-left">
+              <span className="icon">
+                <i className="icon-mobile"></i>
               </span>
-              <div class="feature-copy">
+              <div className="feature-copy">
                 <h3>Mobile Development</h3>
                 <p>
                   I have worked a lot with technologies such as React-Native &

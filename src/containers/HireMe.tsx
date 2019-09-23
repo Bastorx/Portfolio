@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 
 export const HireMe = () => (
   <div id="fh5co-started" className="fh5co-bg-dark">

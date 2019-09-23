@@ -1,10 +1,10 @@
-import { h } from "preact";
+import React from "react";
 
 export const ContactForm = () => (
   <div id="fh5co-consult">
     <div
       className="video fh5co-video"
-      style="background-image: url(images/cover_bg_1.jpg);">
+      style={{ backgroundImage: "url(images / cover_bg_1.jpg)" }}>
       <div className="overlay"></div>
     </div>
     <div className="choose animate-box">

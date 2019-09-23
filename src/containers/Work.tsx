@@ -1,4 +1,4 @@
-import { h } from "preact";
+import React from "react";
 
 export const Work = () => (
   <div id="fh5co-work" className="fh5co-bg-dark">
@@ -13,7 +13,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-1.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>
@@ -24,7 +24,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-2.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Brading</span>
@@ -35,7 +35,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-3.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>
@@ -46,7 +46,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-4.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Design</span>
@@ -57,7 +57,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-5.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Website</span>
@@ -68,7 +68,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-6.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>
@@ -79,7 +79,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-7.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Brading</span>
@@ -90,7 +90,7 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style="background-image: url(images/portfolio-8.jpg);">
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>

@@ -22,11 +22,7 @@ module.exports = {
     }
   },
   resolve: {
-    extensions: [".mjs", ".js", ".jsx", ".json", ".ts", ".tsx"],
-    alias: {
-      react: "preact-compat",
-      "react-dom": "preact-compat"
-    }
+    extensions: [".mjs", ".js", ".jsx", ".json", ".ts", ".tsx"]
   },
   module: {
     rules: [
