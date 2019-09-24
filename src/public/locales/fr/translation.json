@@ -9,7 +9,7 @@
       "website": "Site web"
     },
     "hello": "Hello There!",
-    "content": "Je suis un développeur full stack. Après cinq ans d'études à l'ETNA, Je me suis spécialisé autour des technologies Javascript dans le développement web (back-end, front-end et mobile). Adorateur de technologies telles que React, React-Native, Typescript, Docker, Kubernetes. J'ai acquis un large éventail de compétences qui me permettent de travailler sur le web, le mobile, ou de mettre en place des architectures de micro-services.",
+    "content": "Je suis un développeur full stack. Après cinq ans d'études à l'ETNA, Je me suis spécialisé autour des technologies Javascript et dans le développement web (back-end, front-end et mobile). Adorateur de technologies telles que React, React-Native, Typescript, Docker, Kubernetes. J'ai acquis un large éventail de compétences qui me permettent de travailler sur le web, le mobile, ou de mettre en place des architectures micro-services.",
     "situation": "Je travaille uniquement à distance (Full Remote)."
   },
   "resume": {
@@ -62,9 +62,10 @@
     }
   },
   "services": {
+    "title": "Mes Services",
     "frontEndIntegration": {
       "title": "Intégration Front-End",
-      "description": "Expérience dans de nombreuses technologies javascript front-end telles que React, Vue, Angular, JQuery et même VanillaJS."
+      "description": "Expérience dans de nombreuses technologies javascript front-end telles que React, Vue, Angular, JQuery..."
     },
     "webDevelopment": {
       "title": "Développement Web",
@@ -88,7 +89,7 @@
     }
   },
   "skills": {
-    "title": "Skills",
+    "title": "Compétences",
     "languages": {
       "french": "Français",
       "english": "Anglais",
@@ -98,10 +99,18 @@
   },
   "blog": {
     "title": "Posté sur",
-    "subTitle": "Je développe, je veille, je partage"
+    "subTitle": "Je développe, je veille, je partage",
+    "readMore": "Lire l'article"
   },
   "contact": {
     "title": "Prenez contact avec moi !",
     "button": "CONTACTEZ-MOI"
+  },
+  "languages": {
+    "selectLanguage": "Langues",
+    "french": "Français",
+    "english": "Anglais",
+    "portuguese": "Portugais",
+    "german": "Allemand"
   }
 }

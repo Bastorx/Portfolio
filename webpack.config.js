@@ -45,6 +45,13 @@ module.exports = {
       },
       {
         test: /\.svg$/,
+        include: path.resolve(__dirname, "./node_modules/react-flags-select"),
+        exclude: path.resolve(__dirname, "./src"),
+        use: ["url-loader"]
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
         use: ["@svgr/webpack"]
       }
     ]

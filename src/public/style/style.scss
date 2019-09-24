@@ -1,6 +1,7 @@
 @import "icomoon/icomoon";
 
 @import "bootstrap/bootstrap";
+@import "node_modules/react-flags-select/scss/react-flags-select";
 
 @import "colors";
 
@@ -1298,4 +1299,24 @@ input[type="text"] {
     border-radius: 3px;
     background: #0a0a0a;
     background: var(--theme-logo-background, #0a0a0a);
+}
+
+.language-selector {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	z-index: 10;
+	.flag-select {
+		img {
+			top: 0px;
+		}
+		.arrow-down {
+			color: white;
+		}
+		color: white;
+		font-weight: bold;
+		.flag-option {
+			color: #4d4d4d;
+		}
+	}
 }

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { contentWayPoint } from "../helpers";
 
-export const About = () => {
-  const { t, i18n } = useTranslation("translation");
+export function About() {
+  const { t } = useTranslation("translation");
+  useEffect(() => {
+    if (typeof $ !== "undefined") {
+      contentWayPoint();
+    }
+  }, []);
   return (
     <div id="fh5co-about" className="animate-box">
       <div className="container">
@@ -15,17 +21,17 @@ export const About = () => {
           <div className="col-xs-12 col-md-6 col-lg-5">
             <ul className="info">
               <li>
-                <span className="first-block">Full Name:</span>
+                <span className="first-block">{t("about.info.fullName")}:</span>
                 <span className="second-block">Bastien Chevallier</span>
               </li>
               <li>
-                <span className="first-block">Phone:</span>
+                <span className="first-block">{t("about.info.phone")}:</span>
                 <span className="second-block">
                   <a href="tel:+33612157463">(+33) 6 12 15 74 63</a>
                 </span>
               </li>
               <li>
-                <span className="first-block">Email:</span>
+                <span className="first-block">{t("about.info.email")}:</span>
                 <span className="second-block">
                   <a href="mailto:me@bastienchevallier.com">
                     me@bastienchevallier.com
@@ -33,7 +39,7 @@ export const About = () => {
                 </span>
               </li>
               <li>
-                <span className="first-block">Website:</span>
+                <span className="first-block">{t("about.info.website")}:</span>
                 <span className="second-block">
                   <a href="https://www.bastienchevallier.com">
                     www.bastienchevallier.com
@@ -43,17 +49,10 @@ export const About = () => {
             </ul>
           </div>
           <div className="col-xs-12 col-md-6 col-lg-7">
-            <h2>Hello There!</h2>
+            <h2>{t("about.hello")}</h2>
+            <p>{t("about.content")}</p>
             <p>
-              I am a full stack developer. After five years of study at ETNA. I
-              specialized around Javascript in web development (back-end and
-              front-end). Loving technologies such as React, React-Native,
-              Typescript, Docker, Kubernetes. I have acquired a wide range of
-              skills that allow me to work on the web, mobile, or to set up
-              micro-services architectures.
-            </p>
-            <p>
-              I only work in Full Remote.
+              {t("about.situation")}
               <br />
               <br />
             </p>
@@ -85,4 +84,4 @@ export const About = () => {
       </div>
     </div>
   );
-};
+}

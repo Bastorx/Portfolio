@@ -62,9 +62,10 @@
     }
   },
   "services": {
+    "title": "My Services",
     "frontEndIntegration": {
       "title": "Front-End Integration",
-      "description": "Experienced in many front-end javascript technologies such as React, Vue, Angular, JQuery and even VanillaJS."
+      "description": "Experienced in many front-end javascript technologies such as React, Vue, Angular, JQuery..."
     },
     "webDevelopment": {
       "title": "Web Development",
@@ -98,10 +99,18 @@
   },
   "blog": {
     "title": "Post on",
-    "subTitle": "I develop, I watch, I share"
+    "subTitle": "I develop, I watch, I share",
+    "readMore": "Read More"
   },
   "contact": {
     "title": "Get in touch with me!",
     "button": "CONTACT ME"
+  },
+  "languages": {
+    "selectLanguage": "Languages",
+    "french": "French",
+    "english": "English",
+    "portuguese": "Portuguese",
+    "german": "German"
   }
 }

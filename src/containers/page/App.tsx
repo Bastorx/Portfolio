@@ -16,17 +16,9 @@ import {
 } from "..";
 
 export class App extends Component {
-  public componentDidMount() {
-    if (typeof $ !== "undefined") {
-      $(window).stellar();
-
-      // To fix
-      contentWayPoint();
-    }
-  }
   public render() {
     return (
-      <Suspense fallback="loading">
+      <Suspense fallback={<div className="fh5co-loader"></div>}>
         <div id="page">
           <Header />
           <About />
