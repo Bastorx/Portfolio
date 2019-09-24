@@ -1,7 +1,4 @@
 import React, { Component, Suspense } from "react";
-import { withTranslation, WithTranslation } from "react-i18next";
-
-import { contentWayPoint } from "../../helpers";
 
 import {
   About,

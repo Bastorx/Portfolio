@@ -11,12 +11,26 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
+      chunks: "async",
+      minSize: 30000,
+      maxSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: "~",
+      automaticNameMaxLength: 30,
+      name: true,
       cacheGroups: {
         vendor: {
           test: /node_modules/,
           name: "vendor",
+          chunks: "initial"
+        },
+        react: {
+          test: /node_modules\/react/,
+          name: "react",
           chunks: "initial",
-          enforce: true
+          priority: 10
         }
       }
     }
@@ -39,7 +53,10 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot|png|jp(e)?g|gif)$/,
         use: [
           {
-            loader: "file-loader"
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]"
+            }
           }
         ]
       },
