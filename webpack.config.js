@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   target: "web",
-  entry: "./src/App.tsx",
+  entry: "./src/app.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
