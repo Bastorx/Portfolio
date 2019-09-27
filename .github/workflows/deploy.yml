@@ -22,8 +22,9 @@ jobs:
           npm install
           npm run build
 
-      - name: Deploy on firebase
-        uses: jakejarvis/firebase-deploy-action@master
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@develop
+        with:
+          args: deploy
         env:
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
