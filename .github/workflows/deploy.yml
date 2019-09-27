@@ -13,13 +13,14 @@ jobs:
         uses: actions/checkout@master
 
       - name: Setup Node
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+
       - name: Build dist
         run: npm run build
 
       - name: Deploy on firebase
-      - uses: jakejarvis/firebase-deploy-action@master
+        uses: jakejarvis/firebase-deploy-action@master
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
