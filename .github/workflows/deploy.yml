@@ -18,7 +18,9 @@ jobs:
           node-version: "12.x"
 
       - name: Build dist
-        run: npm run build
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy on firebase
         uses: jakejarvis/firebase-deploy-action@master
