@@ -25,4 +25,5 @@ jobs:
       - name: Deploy on firebase
         uses: jakejarvis/firebase-deploy-action@master
         env:
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
