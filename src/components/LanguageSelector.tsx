@@ -1,6 +1,7 @@
-import React from "react";
-import ReactFlagsSelect from "react-flags-select";
+import React, { Suspense, lazy } from "react";
 import { useTranslation } from "react-i18next";
+
+const ReactFlagsSelect = lazy(() => import("react-flags-select"));
 
 export const LanguageSelector = () => {
   const { t, i18n } = useTranslation("translation");
@@ -17,16 +18,18 @@ export const LanguageSelector = () => {
     }
   };
   return (
-    <ReactFlagsSelect
-      countries={["GB", "FR"]}
-      customLabels={{
-        GB: t("languages.english"),
-        FR: t("languages.french")
-      }}
-      selectedSize={20}
-      defaultCountry={i18n.language === "fr" ? "FR" : "GB"}
-      placeholder={t("languages.selectLanguage")}
-      onSelect={onChange}
-    />
+    <Suspense fallback={<div />}>
+      <ReactFlagsSelect
+        countries={["GB", "FR"]}
+        customLabels={{
+          GB: t("languages.english"),
+          FR: t("languages.french")
+        }}
+        selectedSize={20}
+        defaultCountry={i18n.language === "fr" ? "FR" : "GB"}
+        placeholder={t("languages.selectLanguage")}
+        onSelect={onChange}
+      />
+    </Suspense>
   );
 };

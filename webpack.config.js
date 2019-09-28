@@ -1,36 +1,29 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   target: "web",
   entry: "./src/app.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].bundle.js",
-    chunkFilename: "[name].bundle.js",
+    filename: "[name].[hash].js",
     publicPath: "/"
   },
   optimization: {
+    runtimeChunk: "single",
     splitChunks: {
-      chunks: "async",
-      minSize: 30000,
-      maxSize: 0,
-      minChunks: 1,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 3,
-      automaticNameDelimiter: "~",
-      automaticNameMaxLength: 30,
-      name: true,
+      chunks: "all",
+      maxInitialRequests: Infinity,
+      minSize: 0,
       cacheGroups: {
         vendor: {
-          test: /node_modules/,
-          name: "vendor",
-          chunks: "initial"
-        },
-        react: {
-          test: /node_modules\/react/,
-          name: "react",
-          chunks: "initial",
-          priority: 10
+          test: /[\\/]node_modules[\\/]/,
+          name(module) {
+            const packageName = module.context.match(
+              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+            )[1];
+            return `npm.${packageName.replace("@", "")}`;
+          }
         }
       }
     }
@@ -73,5 +66,5 @@ module.exports = {
       }
     ]
   },
-  plugins: []
+  plugins: [new webpack.HashedModuleIdsPlugin()]
 };
