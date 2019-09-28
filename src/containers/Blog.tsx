@@ -11,7 +11,7 @@ export const Blog = () => {
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
             <h2>
               {t("blog.title")}
-              <a href="https://dev.to">
+              <a href="https://dev.to/bastorx">
                 <DevToSvg className="logo-dev-to" />
               </a>
             </h2>
