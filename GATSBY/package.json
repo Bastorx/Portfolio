@@ -7,7 +7,7 @@
     "start": "gatsby serve",
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+    "format": "prettier-standard --format"
   },
   "repository": {
     "type": "git",
@@ -29,18 +29,40 @@
   "dependencies": {
     "gatsby": "2.15.28",
     "gatsby-image": "2.2.23",
+    "gatsby-plugin-i18n": "1.0.1",
+    "gatsby-plugin-intl": "0.2.8",
     "gatsby-plugin-manifest": "2.2.20",
     "gatsby-plugin-offline": "3.0.11",
     "gatsby-plugin-react-helmet": "3.1.10",
+    "gatsby-plugin-sass": "2.1.17",
     "gatsby-plugin-sharp": "2.2.27",
+    "gatsby-plugin-ts-loader": "0.1.0",
+    "gatsby-plugin-typescript": "2.1.11",
     "gatsby-source-filesystem": "2.1.28",
     "gatsby-transformer-sharp": "2.2.19",
+    "i18next": "17.0.17",
+    "i18next-browser-languagedetector": "3.0.3",
+    "i18next-xhr-backend": "3.2.0",
+    "node-sass": "4.12.0",
     "prop-types": "15.7.2",
     "react": "16.10.1",
     "react-dom": "16.10.1",
-    "react-helmet": "5.2.1"
+    "react-flags-select": "1.1.10",
+    "react-helmet": "5.2.1",
+    "react-i18next": "10.13.1"
   },
   "devDependencies": {
-    "prettier": "1.18.2"
+    "@types/node": "12.7.8",
+    "@types/react": "16.9.4",
+    "@types/react-dom": "16.9.1",
+    "@types/react-flags-select": "1.1.2",
+    "@types/react-i18next": "8.1.0",
+    "prettier": "1.18.2",
+    "prettier-standard": "15.0.1",
+    "tslint": "5.20.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "8.0.1",
+    "tslint-react": "4.1.0",
+    "typescript": "3.6.3"
   }
 }
