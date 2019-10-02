@@ -1,12 +1,14 @@
-import React, { Suspense, lazy } from "react";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import { injectIntl, changeLocale } from "gatsby-plugin-intl";
+import ReactFlagsSelect from "react-flags-select";
 
-const ReactFlagsSelect = lazy(() => import("react-flags-select"));
+interface IProps {
+  intl: any;
+}
 
-export const LanguageSelector = () => {
-  const { t, i18n } = useTranslation("translation");
+const LanguageSelectorComponent = ({ intl }: IProps) => {
   const setLanguage = (language: string) => {
-    i18n.changeLanguage(language);
+    changeLocale(language);
   };
   const onChange = (language: string) => {
     switch (language) {
@@ -18,18 +20,18 @@ export const LanguageSelector = () => {
     }
   };
   return (
-    <Suspense fallback={<div />}>
-      <ReactFlagsSelect
-        countries={["GB", "FR"]}
-        customLabels={{
-          GB: t("languages.english"),
-          FR: t("languages.french")
-        }}
-        selectedSize={20}
-        defaultCountry={i18n.language === "fr" ? "FR" : "GB"}
-        placeholder={t("languages.selectLanguage")}
-        onSelect={onChange}
-      />
-    </Suspense>
+    <ReactFlagsSelect
+      countries={["GB", "FR"]}
+      customLabels={{
+        GB: intl.formatMessage({ id: "languages.english" }),
+        FR: intl.formatMessage({ id: "languages.french" }),
+      }}
+      selectedSize={20}
+      defaultCountry={intl.locale === "fr" ? "FR" : "GB"}
+      placeholder={intl.formatMessage({ id: "languages.selectLanguage" })}
+      onSelect={onChange}
+    />
   );
 };
+
+export const LanguageSelector = injectIntl(LanguageSelectorComponent);
