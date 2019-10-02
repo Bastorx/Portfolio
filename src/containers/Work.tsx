@@ -13,7 +13,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>
@@ -24,7 +25,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Brading</span>
@@ -35,7 +37,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>
@@ -46,7 +49,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Design</span>
@@ -57,7 +61,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Website</span>
@@ -68,7 +73,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>
@@ -79,7 +85,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Brading</span>
@@ -90,7 +97,8 @@ export const Work = () => (
           <a
             href="#"
             className="work"
-            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}>
+            style={{ backgroundImage: "url(images/portfolio-1.jpg)" }}
+          >
             <div className="desc">
               <h3>Project Name</h3>
               <span>Illustration</span>

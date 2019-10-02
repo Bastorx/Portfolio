@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { injectIntl } from "gatsby-plugin-intl";
+
 import { contentWayPoint } from "../helpers";
 
-export function About() {
-  const { t } = useTranslation("translation");
+interface IProps {
+  intl: any;
+}
+const AboutComponent = ({ intl }: IProps) => {
   useEffect(() => {
     if (typeof $ !== "undefined") {
       contentWayPoint();
@@ -14,24 +17,30 @@ export function About() {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2>{t("about.title")}</h2>
+            <h2>{intl.formatMessage({ id: "about.title" })}</h2>
           </div>
         </div>
         <div className="row">
           <div className="col-xs-12 col-md-6 col-lg-5">
             <ul className="info">
               <li>
-                <span className="first-block">{t("about.info.fullName")}:</span>
+                <span className="first-block">
+                  {intl.formatMessage({ id: "about.info.fullName" })}:
+                </span>
                 <span className="second-block">Bastien Chevallier</span>
               </li>
               <li>
-                <span className="first-block">{t("about.info.phone")}:</span>
+                <span className="first-block">
+                  {intl.formatMessage({ id: "about.info.phone" })}:
+                </span>
                 <span className="second-block">
                   <a href="tel:+33612157463">(+33) 6 12 15 74 63</a>
                 </span>
               </li>
               <li>
-                <span className="first-block">{t("about.info.email")}:</span>
+                <span className="first-block">
+                  {intl.formatMessage({ id: "about.info.email" })}:
+                </span>
                 <span className="second-block">
                   <a href="mailto:me@bastienchevallier.com">
                     me@bastienchevallier.com
@@ -39,7 +48,9 @@ export function About() {
                 </span>
               </li>
               <li>
-                <span className="first-block">{t("about.info.website")}:</span>
+                <span className="first-block">
+                  {intl.formatMessage({ id: "about.info.website" })}:
+                </span>
                 <span className="second-block">
                   <a href="https://www.bastienchevallier.com">
                     www.bastienchevallier.com
@@ -49,33 +60,32 @@ export function About() {
             </ul>
           </div>
           <div className="col-xs-12 col-md-6 col-lg-7">
-            <h2>{t("about.hello")}</h2>
-            <p>{t("about.content")}</p>
+            <h2>{intl.formatMessage({ id: "about.hello" })}</h2>
+            <p>{intl.formatMessage({ id: "about.content" })}</p>
             <p>
-              {t("about.situation")}
+              {intl.formatMessage({ id: "about.situation" })}
               <br />
               <br />
             </p>
-
             <ul className="fh5co-social-icons">
               <li>
                 <a href="https://www.linkedin.com/in/bastien-chevallier/">
-                  <i className="icon-linkedin2"></i>
+                  <i className="icon-linkedin2" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/Bastorx">
-                  <i className="icon-github2"></i>
+                  <i className="icon-github2" />
                 </a>
               </li>
               <li>
                 <a href="https://www.npmjs.com/~bastorx">
-                  <i className="icon-npm"></i>
+                  <i className="icon-npm" />
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/cheval_b">
-                  <i className="icon-twitter2"></i>
+                  <i className="icon-twitter2" />
                 </a>
               </li>
             </ul>
@@ -84,4 +94,6 @@ export function About() {
       </div>
     </div>
   );
-}
+};
+
+export const About = injectIntl(AboutComponent);

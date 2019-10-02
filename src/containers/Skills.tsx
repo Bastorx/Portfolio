@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { injectIntl } from "gatsby-plugin-intl";
 
-export const Skills = () => {
+interface IProps {
+  intl: any;
+}
+export const SkillsComponent = ({ intl }: IProps) => {
   useEffect(() => {
     if (typeof $ !== "undefined") {
       if ($("#fh5co-skills").length > 0) {
@@ -16,24 +19,23 @@ export const Skills = () => {
                   barColor: "#FF9000",
                   trackColor: "#f5f5f5",
                   size: 160,
-                  animate: 1000
+                  animate: 1000,
                 });
               }, 400);
               $(this.element).addClass("animated");
             }
           },
-          { offset: "90%" }
+          { offset: "90%" },
         );
       }
     }
   }, []);
-  const { t } = useTranslation("translation");
   return (
     <div id="fh5co-skills" className="animate-box">
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2>{t("skills.title")}</h2>
+            <h2>{intl.formatMessage({ id: "skills.title" })}</h2>
           </div>
         </div>
         <div className="row row-pb-md">
@@ -109,7 +111,8 @@ export const Skills = () => {
                   aria-valuenow={90}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "90%" }}></div>
+                  style={{ width: "90%" }}
+                />
               </div>
             </div>
             <div className="progress-wrap">
@@ -124,7 +127,8 @@ export const Skills = () => {
                   aria-valuenow={90}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "90%" }}></div>
+                  style={{ width: "90%" }}
+                />
               </div>
             </div>
             <div className="progress-wrap">
@@ -139,7 +143,8 @@ export const Skills = () => {
                   aria-valuenow={80}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "80%" }}></div>
+                  style={{ width: "80%" }}
+                />
               </div>
             </div>
             <div className="progress-wrap">
@@ -154,7 +159,8 @@ export const Skills = () => {
                   aria-valuenow={85}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "75%" }}></div>
+                  style={{ width: "75%" }}
+                />
               </div>
             </div>
           </div>
@@ -162,7 +168,7 @@ export const Skills = () => {
             <div className="progress-wrap">
               <h3>
                 <span className="name-left">
-                  {t("skills.languages.french")}
+                  {intl.formatMessage({ id: "skills.languages.french" })}
                 </span>
                 <span className="value-right">100%</span>
               </h3>
@@ -173,13 +179,14 @@ export const Skills = () => {
                   aria-valuenow={100}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "100%" }}></div>
+                  style={{ width: "100%" }}
+                />
               </div>
             </div>
             <div className="progress-wrap">
               <h3>
                 <span className="name-left">
-                  {t("skills.languages.english")}
+                  {intl.formatMessage({ id: "skills.languages.english" })}
                 </span>
                 <span className="value-right">80%</span>
               </h3>
@@ -190,13 +197,14 @@ export const Skills = () => {
                   aria-valuenow={70}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "70%" }}></div>
+                  style={{ width: "70%" }}
+                />
               </div>
             </div>
             <div className="progress-wrap">
               <h3>
                 <span className="name-left">
-                  {t("skills.languages.portuguese")}
+                  {intl.formatMessage({ id: "skills.languages.portuguese" })}
                 </span>
                 <span className="value-right">50%</span>
               </h3>
@@ -207,13 +215,14 @@ export const Skills = () => {
                   aria-valuenow={85}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "50%" }}></div>
+                  style={{ width: "50%" }}
+                />
               </div>
             </div>
             <div className="progress-wrap">
               <h3>
                 <span className="name-left">
-                  {t("skills.languages.german")}
+                  {intl.formatMessage({ id: "skills.languages.german" })}
                 </span>
                 <span className="value-right">25%</span>
               </h3>
@@ -224,7 +233,8 @@ export const Skills = () => {
                   aria-valuenow={75}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "25%" }}></div>
+                  style={{ width: "25%" }}
+                />
               </div>
             </div>
           </div>
@@ -233,3 +243,5 @@ export const Skills = () => {
     </div>
   );
 };
+
+export const Skills = injectIntl(SkillsComponent);

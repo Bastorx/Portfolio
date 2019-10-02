@@ -1,11 +1,16 @@
 import React from "react";
+import { injectIntl } from "gatsby-plugin-intl";
 
-export const ContactForm = () => (
+interface IProps {
+  intl: any;
+}
+const ContactFormComponent = ({ intl }: IProps) => (
   <div id="fh5co-consult">
     <div
       className="video fh5co-video"
-      style={{ backgroundImage: "url(images / cover_bg_1.jpg)" }}>
-      <div className="overlay"></div>
+      style={{ backgroundImage: "url(images / cover_bg_1.jpg)" }}
+    >
+      <div className="overlay" />
     </div>
     <div className="choose animate-box">
       <h2>Contact</h2>
@@ -74,3 +79,5 @@ export const ContactForm = () => (
     </div>
   </div>
 );
+
+export const ContactForm = injectIntl(ContactFormComponent);

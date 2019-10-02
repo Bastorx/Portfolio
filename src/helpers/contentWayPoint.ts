@@ -1,5 +1,7 @@
 export const contentWayPoint = () => {
-  if (!$) { return; }
+  if (!$) {
+    return;
+  }
   $(".animate-box").waypoint(
     function(direction: any) {
       if (direction === "down" && !$(this.element).hasClass("animation-end")) {
@@ -20,6 +22,6 @@ export const contentWayPoint = () => {
         });
       }
     },
-    { offset: "85%" }
+    { offset: "85%" },
   );
 };
