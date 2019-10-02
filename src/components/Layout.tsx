@@ -14,6 +14,7 @@ const Layout = ({ children, intl }: IProps) => (
         lang: intl.locale,
       }}
     >
+      <title>Bastien Chevallier</title>
       <link
         rel="preload"
         href="icomoon.ttf"
@@ -63,8 +64,38 @@ const Layout = ({ children, intl }: IProps) => (
       />
       <link
         rel="alternate"
+        href="https://www.bastienchevallier.com"
+        hrefLang="x-default"
+      />
+      <link
+        rel="alternate"
         href="https://www.bastienchevallier.com/en"
         hrefLang="en"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/en"
+        hrefLang="en-us"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/en"
+        hrefLang="en-gb"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/en"
+        hrefLang="en-ca"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/en"
+        hrefLang="en-au"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/en"
+        hrefLang="en-nz"
       />
       <link
         rel="alternate"
@@ -73,8 +104,38 @@ const Layout = ({ children, intl }: IProps) => (
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/"
-        hrefLang="x-default"
+        href="https://www.bastienchevallier.com/fr"
+        hrefLang="fr-fr"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/fr"
+        hrefLang="fr-ca"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/fr"
+        hrefLang="fr-ch"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/fr"
+        hrefLang="fr-be"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/fr"
+        hrefLang="fr-gf"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/fr"
+        hrefLang="fr-pf"
+      />
+      <link
+        rel="alternate"
+        href="https://www.bastienchevallier.com/fr"
+        hrefLang="fr-tf"
       />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
