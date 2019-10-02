@@ -17,10 +17,10 @@ const Layout = ({ children, intl }: IProps) => (
       <title>Bastien Chevallier</title>
       <link
         rel="preload"
-        href="icomoon.ttf"
+        href="/icomoon.ttf"
         as="font"
         type="font/ttf"
-        crossOrigin="crossorigin"
+        crossOrigin="anonymous"
       />
       <meta charSet="utf-8" />
       <meta
