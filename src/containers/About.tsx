@@ -52,8 +52,8 @@ const AboutComponent = ({ intl }: IProps) => {
                   {intl.formatMessage({ id: "about.info.website" })}:
                 </span>
                 <span className="second-block">
-                  <a href="https://www.bastienchevallier.com">
-                    www.bastienchevallier.com
+                  <a href="https://bastienchevallier.com">
+                    bastienchevallier.com
                   </a>
                 </span>
               </li>

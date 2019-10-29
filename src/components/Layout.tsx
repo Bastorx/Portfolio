@@ -37,7 +37,7 @@ const Layout = ({ children, intl }: IProps) => (
       <meta property="og:title" content="Bastien Chevallier" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="" />
-      <meta property="og:url" content="https://www.bastienchevallier.com" />
+      <meta property="og:url" content="https://bastienchevallier.com" />
       <meta property="og:site_name" content="Bastien Chevallier" />
       <meta
         property="og:description"
@@ -45,7 +45,7 @@ const Layout = ({ children, intl }: IProps) => (
       />
       <meta name="twitter:title" content="Bastien Chevallier" />
       <meta name="twitter:image" content="" />
-      <meta name="twitter:url" content="https://www.bastienchevallier.com" />
+      <meta name="twitter:url" content="https://bastienchevallier.com" />
       <meta
         name="twitter:card"
         content="Bastien Chevallier - Full Stack Developer - Portfolio"
@@ -64,77 +64,77 @@ const Layout = ({ children, intl }: IProps) => (
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com"
+        href="https://bastienchevallier.com"
         hrefLang="x-default"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/en"
+        href="https://bastienchevallier.com/en"
         hrefLang="en"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/en"
+        href="https://bastienchevallier.com/en"
         hrefLang="en-us"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/en"
+        href="https://bastienchevallier.com/en"
         hrefLang="en-gb"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/en"
+        href="https://bastienchevallier.com/en"
         hrefLang="en-ca"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/en"
+        href="https://bastienchevallier.com/en"
         hrefLang="en-au"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/en"
+        href="https://bastienchevallier.com/en"
         hrefLang="en-nz"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr-fr"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr-ca"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr-ch"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr-be"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr-gf"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr-pf"
       />
       <link
         rel="alternate"
-        href="https://www.bastienchevallier.com/fr"
+        href="https://bastienchevallier.com/fr"
         hrefLang="fr-tf"
       />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />

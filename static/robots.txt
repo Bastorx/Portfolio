@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bastienchevallier.com/sitemap.xml
+Sitemap: https://bastienchevallier.com/sitemap.xml
