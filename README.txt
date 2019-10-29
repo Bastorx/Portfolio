@@ -1,1 +1,1 @@
-https://www.bastienchevallier.com
+https://bastienchevallier.com
