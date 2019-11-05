@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 
 interface IProps {
@@ -32,73 +33,76 @@ export const SkillsComponent = ({ intl }: IProps) => {
   }, []);
   return (
     <div id="fh5co-skills" className="animate-box">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+      <Container>
+        <Row>
+          <Col
+            md={{ span: 8, offset: 2 }}
+            className="text-center fh5co-heading"
+          >
             <h2>{intl.formatMessage({ id: "skills.title" })}</h2>
-          </div>
-        </div>
-        <div className="row row-pb-md">
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          </Col>
+        </Row>
+        <Row className="row-pb-md">
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="90">
               <span>
                 <strong>HTML / CSS</strong>90%
               </span>
             </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          </Col>
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="90">
               <span>
                 <strong>Javascript</strong>90%
               </span>
             </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          </Col>
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="95">
               <span>
                 <strong>Typescript / Node</strong>95%
               </span>
             </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          </Col>
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="95">
               <span>
                 <strong>React</strong>95%
               </span>
             </div>
-          </div>
+          </Col>
 
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="85">
               <span>
                 <strong>React Native</strong>85%
               </span>
             </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          </Col>
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="85">
               <span>
                 <strong>MySQL</strong>85%
               </span>
             </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          </Col>
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="85">
               <span>
                 <strong>MongoDB</strong>85%
               </span>
             </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+          </Col>
+          <Col xs={12} sm={6} md={3} className="text-center">
             <div className="chart" data-percent="80">
               <span>
                 <strong>Vue</strong>80%
               </span>
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
             <div className="progress-wrap">
               <h3>
                 <span className="name-left">Docker</span>
@@ -163,8 +167,8 @@ export const SkillsComponent = ({ intl }: IProps) => {
                 />
               </div>
             </div>
-          </div>
-          <div className="col-md-6">
+          </Col>
+          <Col md={6}>
             <div className="progress-wrap">
               <h3>
                 <span className="name-left">
@@ -237,9 +241,9 @@ export const SkillsComponent = ({ intl }: IProps) => {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

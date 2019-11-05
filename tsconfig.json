@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "noImplicitAny": true,
     "removeComments": true,
     "sourceMap": true,
@@ -13,7 +13,24 @@
     "jsx": "react",
     "outDir": "dist",
     "lib": ["esnext", "dom"],
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "paths": {
+      "@containers": ["containers/index"],
+      "@containers/*": ["containers/*"],
+      "@components": ["components/index"],
+      "@components/*": ["components/*"],
+      "@helpers": ["helpers/index"],
+      "@helpers/*": ["helpers/*"],
+      
+      "@styled": ["components/styled/index"],
+      "@styled/*": ["components/styled/*"],
+
+      "@images/*": ["images/*"],
+      "@locales/*": ["locales/*"],
+      "@page/*": ["page/*"],
+      "@public/*": ["public/*"],
+      "@style/*": ["style/*"],
+    }
   },
   "include": ["src/**/*"],
   "files": ["src/index.d.ts"],

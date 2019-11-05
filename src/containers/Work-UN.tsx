@@ -1,8 +1,9 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 export const Work = () => (
   <div id="fh5co-work" className="fh5co-bg-dark">
-    <div className="container">
+    <Container>
       <div className="row animate-box">
         <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
           <h2>Work</h2>
@@ -106,6 +107,6 @@ export const Work = () => (
           </a>
         </div>
       </div>
-    </div>
+    </Container>
   </div>
 );

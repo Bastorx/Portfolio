@@ -1,6 +1,7 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
-import DevToSvg from "../images/dev-to.svg";
+import DevToSvg from "@images/dev-to.svg";
 
 interface IProps {
   intl: any;
@@ -8,9 +9,12 @@ interface IProps {
 const BlogComponent = ({ intl }: IProps) => {
   return (
     <div id="fh5co-blog">
-      <div className="container">
-        <div className="row animate-box">
-          <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+      <Container>
+        <Row className="animate-box">
+          <Col
+            md={{ span: 8, offset: 2 }}
+            className="text-center fh5co-heading"
+          >
             <h2>
               {intl.formatMessage({ id: "blog.title" })}
               <a href="https://dev.to/bastorx">
@@ -18,11 +22,11 @@ const BlogComponent = ({ intl }: IProps) => {
               </a>
             </h2>
             <p>{intl.formatMessage({ id: "blog.subTitle" })}</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4" />
-          <div className="col-md-4">
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4} />
+          <Col md={4}>
             <div className="fh5co-blog animate-box">
               <a
                 href="https://dev.to/bastorx/many-ways-to-use-apollo-28l9"
@@ -58,10 +62,10 @@ const BlogComponent = ({ intl }: IProps) => {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="col-md-4" />
-        </div>
-      </div>
+          </Col>
+          <Col md={4} />
+        </Row>
+      </Container>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 
-import { contentWayPoint } from "../helpers";
+import { contentWayPoint } from "@helpers";
 
 interface IProps {
   intl: any;
@@ -14,14 +15,17 @@ const AboutComponent = ({ intl }: IProps) => {
   }, []);
   return (
     <div id="fh5co-about" className="animate-box">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+      <Container>
+        <Row>
+          <Col
+            md={{ span: 8, offset: 2 }}
+            className="text-center fh5co-heading"
+          >
             <h2>{intl.formatMessage({ id: "about.title" })}</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12 col-md-6 col-lg-5">
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} md={6} lg={5}>
             <ul className="info">
               <li>
                 <span className="first-block">
@@ -58,8 +62,8 @@ const AboutComponent = ({ intl }: IProps) => {
                 </span>
               </li>
             </ul>
-          </div>
-          <div className="col-xs-12 col-md-6 col-lg-7">
+          </Col>
+          <Col xs={12} md={6} lg={7}>
             <h2>{intl.formatMessage({ id: "about.hello" })}</h2>
             <p>{intl.formatMessage({ id: "about.content" })}</p>
             <p>
@@ -89,9 +93,9 @@ const AboutComponent = ({ intl }: IProps) => {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 
-import { LanguageSelector } from "../components/LanguageSelector";
+import { LanguageSelector } from "@components/LanguageSelector";
 
-import { IsMobile } from "../helpers";
+import { IsMobile } from "@helpers";
 
 interface IProps {
   intl: any;
@@ -33,9 +34,9 @@ const HeaderComponent = ({ intl }: IProps) => {
         <LanguageSelector />
       </div>
       <div className="overlay" />
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 col-md-offset-2 text-center">
+      <Container>
+        <Row>
+          <Col md={{ span: 8, offset: 2 }} className="text-center">
             <div className="display-t js-fullheight">
               <div
                 className="display-tc js-fullheight animate-box"
@@ -77,9 +78,9 @@ const HeaderComponent = ({ intl }: IProps) => {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </header>
   );
 };

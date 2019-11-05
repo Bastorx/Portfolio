@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 
 interface IProps {
@@ -7,15 +8,18 @@ interface IProps {
 const ServicesComponent = ({ intl }: IProps) => {
   return (
     <div id="fh5co-features" className="animate-box">
-      <div className="container">
+      <Container>
         <div className="services-padding">
-          <div className="row">
-            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+          <Row>
+            <Col
+              md={{ span: 8, offset: 2 }}
+              className="text-center fh5co-heading"
+            >
               <h2>{intl.formatMessage({ id: "services.title" })}</h2>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-4 text-center">
+            </Col>
+          </Row>
+          <Row>
+            <Col md={4} className="text-center">
               <div className="feature-left">
                 <span className="icon">
                   <i className="icon-paintbrush" />
@@ -33,8 +37,8 @@ const ServicesComponent = ({ intl }: IProps) => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4 text-center">
+            </Col>
+            <Col md={4} className="text-center">
               <div className="feature-left">
                 <span className="icon">
                   <i className="icon-bargraph" />
@@ -52,8 +56,8 @@ const ServicesComponent = ({ intl }: IProps) => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4 text-center">
+            </Col>
+            <Col md={4} className="text-center">
               <div className="feature-left">
                 <span className="icon">
                   <i className="icon-mobile" />
@@ -71,10 +75,10 @@ const ServicesComponent = ({ intl }: IProps) => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-4 text-center">
+            </Col>
+          </Row>
+          <Row>
+            <Col md={4} className="text-center">
               <div className="feature-left">
                 <span className="icon">
                   <i className="icon-cloud" />
@@ -90,8 +94,8 @@ const ServicesComponent = ({ intl }: IProps) => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4 text-center">
+            </Col>
+            <Col md={4} className="text-center">
               <div className="feature-left">
                 <span className="icon">
                   <i className="icon-search" />
@@ -107,8 +111,8 @@ const ServicesComponent = ({ intl }: IProps) => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4 text-center">
+            </Col>
+            <Col md={4} className="text-center">
               <div className="feature-left">
                 <span className="icon">
                   <i className="icon-chat" />
@@ -122,10 +126,10 @@ const ServicesComponent = ({ intl }: IProps) => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

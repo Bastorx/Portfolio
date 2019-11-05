@@ -1,8 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { injectIntl } from "gatsby-plugin-intl";
-import "../style/style.scss";
-
+import "@style/icomoon/icomoon.scss";
+import "@style/style.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-flags-select/css/react-flags-select.css";
 interface IProps {
   children: JSX.Element | JSX.Element[];
   intl: any;

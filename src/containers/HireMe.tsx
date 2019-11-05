@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 
 interface IProps {
@@ -8,9 +9,12 @@ const HireMeComponent = ({ intl }: IProps) => {
   return (
     <div id="fh5co-started" className="fh5co-bg-dark">
       <div className="overlay" />
-      <div className="container">
-        <div className="row animate-box">
-          <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+      <Container>
+        <Row className="animate-box">
+          <Col
+            md={{ span: 8, offset: 2 }}
+            className="text-center fh5co-heading"
+          >
             <h2>{intl.formatMessage({ id: "contact.title" })}</h2>
             <p>
               <a
@@ -20,9 +24,9 @@ const HireMeComponent = ({ intl }: IProps) => {
                 {intl.formatMessage({ id: "contact.button" })}
               </a>
             </p>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

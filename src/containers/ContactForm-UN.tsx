@@ -1,4 +1,5 @@
 import React from "react";
+import { Row, Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 
 interface IProps {
@@ -15,49 +16,48 @@ const ContactFormComponent = ({ intl }: IProps) => (
     <div className="choose animate-box">
       <h2>Contact</h2>
       <form action="#">
-        <div className="row form-group">
-          <div className="col-md-6">
+        <Row className="form-group">
+          <Col md={6}>
             <input
               type="text"
               id="fname"
               className="form-control"
               placeholder="Your firstname"
             />
-          </div>
-        </div>
-        <div className="row form-group">
-          <div className="col-md-6">
+          </Col>
+        </Row>
+        <Row className="form-group">
+          <Col md={6}>
             <input
               type="text"
               id="lname"
               className="form-control"
               placeholder="Your lastname"
             />
-          </div>
-        </div>
-        <div className="row form-group">
-          <div className="col-md-12">
+          </Col>
+        </Row>
+        <Row className="form-group">
+          <Col md={12}>
             <input
               type="text"
               id="email"
               className="form-control"
               placeholder="Your email address"
             />
-          </div>
-        </div>
-        <div className="row form-group">
-          <div className="col-md-12">
+          </Col>
+        </Row>
+        <Row className="form-group">
+          <Col md={12}>
             <input
               type="text"
               id="subject"
               className="form-control"
               placeholder="Your subject of this message"
             />
-          </div>
-        </div>
-
-        <div className="row form-group">
-          <div className="col-md-12">
+          </Col>
+        </Row>
+        <Row className="form-group">
+          <Col md={12}>
             <textarea
               name="message"
               id="message"
@@ -66,8 +66,8 @@ const ContactFormComponent = ({ intl }: IProps) => (
               className="form-control"
               placeholder="Say something about us"
             />
-          </div>
-        </div>
+          </Col>
+        </Row>
         <div className="form-group">
           <input
             type="submit"

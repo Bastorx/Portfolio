@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 import {
   About,
   Blog,
@@ -10,7 +10,7 @@ import {
   Services,
   Skills,
   // Work,
-} from "../containers";
+} from "@containers";
 
 export class App extends Component {
   public render() {

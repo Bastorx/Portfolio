@@ -8,7 +8,16 @@
     "ordered-imports": false,
     "jsx-no-multiline-js": false,
     "object-literal-sort-keys": false,
-    "jsx-boolean-value": [true, "never"]
+    "jsx-boolean-value": [true, "never"],
+    "whitespace": [
+      true,
+      {
+        "dev": true,
+        "optional": true,
+        "whitelist": ["@", "~"]
+      }
+    ],
+    "no-implicit-dependencies": [ true, "dev", "optional"]
   },
   "linterOptions": {
     "exclude": ["**/dist/**", "node_modules/**"]
