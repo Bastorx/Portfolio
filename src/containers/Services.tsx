@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-grid-system";
 import { injectIntl } from "gatsby-plugin-intl";
 
 interface IProps {
@@ -12,7 +12,8 @@ const ServicesComponent = ({ intl }: IProps) => {
         <div className="services-padding">
           <Row>
             <Col
-              md={{ span: 8, offset: 2 }}
+              md={8}
+              offset={{ md: 2 }}
               className="text-center fh5co-heading"
             >
               <h2>{intl.formatMessage({ id: "services.title" })}</h2>

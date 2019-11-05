@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container } from "react-grid-system";
 
 export const Work = () => (
   <div id="fh5co-work" className="fh5co-bg-dark">

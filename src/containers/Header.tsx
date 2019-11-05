@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-grid-system";
 import { injectIntl } from "gatsby-plugin-intl";
 
 import { LanguageSelector } from "@components/LanguageSelector";
@@ -36,7 +36,7 @@ const HeaderComponent = ({ intl }: IProps) => {
       <div className="overlay" />
       <Container>
         <Row>
-          <Col md={{ span: 8, offset: 2 }} className="text-center">
+          <Col md={8} offset={{ md: 2 }} className="text-center">
             <div className="display-t js-fullheight">
               <div
                 className="display-tc js-fullheight animate-box"

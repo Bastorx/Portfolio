@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby-plugin-intl";
+import { Visible, Hidden } from "react-grid-system";
 
 import Layout from "../components/Layout";
 
@@ -36,7 +37,7 @@ const NotFoundPage = () => (
         >
           ERROR 404: CORGI FOUND
         </h1>
-        <div className="d-none d-md-block d-lg-block">
+        <Hidden xs sm>
           <p
             style={{
               position: "absolute",
@@ -51,7 +52,7 @@ const NotFoundPage = () => (
             <br /> Now you can return to the home page by touching (clicking)
             its cute snout 🥰
           </p>
-        </div>
+        </Hidden>
         <Link
           to="/"
           style={{
@@ -64,13 +65,13 @@ const NotFoundPage = () => (
           }}
         />
       </div>
-      <div className="d-block d-md-none d-lg-none">
+      <Visible xs sm>
         <p style={{ textAlign: "center" }}>
           Congrat you've found the corgi 😊
           <br /> Now you can return to the home page by touching (clicking) its
           cute snout 🥰
         </p>
-      </div>
+      </Visible>
     </div>
   </Layout>
 );

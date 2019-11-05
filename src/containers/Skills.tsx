@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-grid-system";
 import { injectIntl } from "gatsby-plugin-intl";
 
 interface IProps {
@@ -35,10 +35,7 @@ export const SkillsComponent = ({ intl }: IProps) => {
     <div id="fh5co-skills" className="animate-box">
       <Container>
         <Row>
-          <Col
-            md={{ span: 8, offset: 2 }}
-            className="text-center fh5co-heading"
-          >
+          <Col md={8} offset={{ md: 2 }} className="text-center fh5co-heading">
             <h2>{intl.formatMessage({ id: "skills.title" })}</h2>
           </Col>
         </Row>

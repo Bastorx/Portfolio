@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-grid-system";
 import { injectIntl } from "gatsby-plugin-intl";
 
 interface IProps {

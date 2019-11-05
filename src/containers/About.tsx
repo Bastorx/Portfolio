@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-grid-system";
 import { injectIntl } from "gatsby-plugin-intl";
 
 import { contentWayPoint } from "@helpers";
@@ -17,10 +17,7 @@ const AboutComponent = ({ intl }: IProps) => {
     <div id="fh5co-about" className="animate-box">
       <Container>
         <Row>
-          <Col
-            md={{ span: 8, offset: 2 }}
-            className="text-center fh5co-heading"
-          >
+          <Col md={2} offset={{ md: 2 }} className="text-center fh5co-heading">
             <h2>{intl.formatMessage({ id: "about.title" })}</h2>
           </Col>
         </Row>

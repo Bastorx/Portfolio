@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-grid-system";
 import { injectIntl } from "gatsby-plugin-intl";
 import DevToSvg from "@images/dev-to.svg";
 
@@ -11,10 +11,7 @@ const BlogComponent = ({ intl }: IProps) => {
     <div id="fh5co-blog">
       <Container>
         <Row className="animate-box">
-          <Col
-            md={{ span: 8, offset: 2 }}
-            className="text-center fh5co-heading"
-          >
+          <Col md={8} offset={{ md: 2 }} className="text-center fh5co-heading">
             <h2>
               {intl.formatMessage({ id: "blog.title" })}
               <a href="https://dev.to/bastorx">
