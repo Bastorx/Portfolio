@@ -29,14 +29,14 @@ const AboutComponent = ({ intl }: IProps) => {
                 </span>
                 <span className="second-block">Bastien Chevallier</span>
               </li>
-              <li>
+              {/*<li>
                 <span className="first-block">
                   {intl.formatMessage({ id: "about.info.phone" })}:
                 </span>
                 <span className="second-block">
                   <a href="tel:+33612157463">(+33) 6 12 15 74 63</a>
                 </span>
-              </li>
+              </li>*/}
               <li>
                 <span className="first-block">
                   {intl.formatMessage({ id: "about.info.email" })}:
