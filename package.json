@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Bastorx/Portfolio#readme",
   "dependencies": {
+<<<<<<< HEAD
     "bootstrap": "4.3.1",
     "gatsby": "2.20.15",
     "gatsby-image": "2.3.2",
