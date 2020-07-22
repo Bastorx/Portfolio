@@ -10,16 +10,30 @@
     },
     "hello": "Hello There!",
     "content": "I am a full stack developer. After five years of study at ETNA. I specialized around Javascript in web development (back-end and front-end). Loving technologies such as React, React-Native, Typescript, Docker, Kubernetes. I have acquired a wide range of skills that allow me to work on the web, mobile, or to set up micro-services architectures.",
-    "situation": "I only work in Full Remote."
+    "situation": "Currently in passive research."
   },
   "resume": {
     "title": "My Resume",
     "workExperience": {
       "title": "Work Experience",
+      "Kardinal": {
+        "title": "Full Stack JS Developer",
+        "company": "Kardinal",
+        "period": "2020 (March) - Current",
+        "description": "The companion solution for route optimization, based on top-notch technologies.",
+        "role": "Role: Developer Full Stack JS. Development of a micro-services aggregation tool (Gateway) with NestJS, front end development with React, Redux, TypeScript"
+      },
+      "Visitadom": {
+        "title": "Front End Developer",
+        "company": "Visitadom",
+        "period": "2019 (December) - 2020 (January)",
+        "description": "Visitadom est une plateforme qui met en relation les patients et les praticiens de santé à domicile.",
+        "role": "Role: Front End Developer. Integration of mock-ups, development of authentication pages, practitioner search and appointment scheduling. React, Typescript, Hooks"
+      },
       "AWE": {
         "title": "Full Stack Developer",
         "company": "AWE",
-        "period": "2018 (January) - Current",
+        "period": "2018 (January) - 2019 (November)",
         "description": "AWE is a consulting, technology and marketing services firm. We are helping our clients with strategy, data management, content marketing, performance management and marketing automation.",
         "role": "Role: Full Stack Developer in R&D. Dashboards development. React, Typescript, MySQL, Google Clound Platform, Docker, Kubernetes & Skaffold"
       },
