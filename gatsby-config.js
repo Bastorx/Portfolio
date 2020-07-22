@@ -30,12 +30,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     {
-      resolve: "gatsby-plugin-ts-loader",
-      options: {
-        tslint: true,
-      },
-    },
-    {
       resolve: "gatsby-plugin-intl",
       options: {
         path: `${__dirname}/src/locales`,
