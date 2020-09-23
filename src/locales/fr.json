@@ -21,7 +21,7 @@
         "company": "Kardinal",
         "period": "2020 (Mars) - Actuel",
         "description": "La solution d’aide à la décision pour l’optimisation de tournées, basée sur des technologies de pointe.",
-        "role": "Rôle: Développeur Full Stack JS. Développement d'un outil d'agrégation de micro-services (Gateway) avec NestJS, développement front end avec React, Redux, TypeScript"
+        "role": "Rôle: Développeur Full Stack JS. Développement de micro-services en Golang, d'un outil d'agrégation (Gateway) avec NestJS, Typescript, développement front end avec React, Redux, TypeScript"
       },
       "Visitadom": {
         "title": "Développeur Front End",
