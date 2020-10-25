@@ -61,12 +61,9 @@ const AboutComponent = ({ intl }: IProps) => {
           </div>
           <div className="col-xs-12 col-md-6 col-lg-7">
             <h2>{intl.formatMessage({ id: "about.hello" })}</h2>
-            <p>{intl.formatMessage({ id: "about.content" })}</p>
-            <p>
-              {intl.formatMessage({ id: "about.situation" })}
-              <br />
-              <br />
-            </p>
+            <p style={{whiteSpace: "pre-line"}}>{intl.formatMessage({ id: "about.content" })}</p>
+            <br />
+            <br />
             <ul className="fh5co-social-icons">
               <li>
                 <a href="https://www.linkedin.com/in/bastien-chevallier/">

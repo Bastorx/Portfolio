@@ -1,5 +1,5 @@
 {
-  "title": "Full Stack Developer",
+  "title": "Web Developer",
   "about": {
     "title": "About Me",
     "info": {
@@ -9,7 +9,7 @@
       "website": "Website"
     },
     "hello": "Hello There!",
-    "content": "I am a full stack developer. After five years of study at ETNA. I specialized around Javascript in web development (back-end and front-end). Loving technologies such as React, React-Native, Typescript, Docker, Kubernetes. I have acquired a wide range of skills that allow me to work on the web, mobile, or to set up micro-services architectures.",
+    "content": "Passionate about programming since I was a teenager, I undertook 5 years of studies at ETNA. Focusing initially in low level programming, I quickly had many experiences in web development through my first internships, both front-end, back-end and DevOps; I have, through these 5 years of study, worn several hats expanding my field of expertise. \n\nAt the end of my studies, I started to become a freelancer. I define myself as a: freelance web developer \"full stack\" (although I may feel a little more comfortable with the back-end over time). \n\nAt first I specialized on a stack around JavaScript because it's just as useful in front and backend development (even mobile): React.js, React-Native, Node.js, Typescript. Then, in the last few years, I became very interested in other languages in order to be able to answer more and more problems (Golang, Rust, for example). I have also worked as a DevOps in some of my missions, so I master Docker, Kubernetes, Firebase, GCP, Vercel and AWS very well.\n\nCommunication is for me a very important quality in this field, that's why I also tend to share my knowledge (through courses, articles or by attending many Meetup events).\n\nCurrent focus: Golang / TypeScript / DevOps",
     "situation": "Currently in passive research."
   },
   "resume": {
@@ -35,7 +35,7 @@
         "company": "AWE",
         "period": "2018 (January) - 2019 (November)",
         "description": "AWE is a consulting, technology and marketing services firm. We are helping our clients with strategy, data management, content marketing, performance management and marketing automation.",
-        "role": "Role: Full Stack Developer in R&D. Dashboards development. React, Typescript, MySQL, Google Clound Platform, Docker, Kubernetes & Skaffold"
+        "role": "Role: Full Stack Developer in R&D. Dashboards development. React, Typescript, Golang, MySQL, Google Clound Platform, Docker, Kubernetes & Skaffold"
       },
       "Beedeez": {
         "title": "Full Stack Developer",

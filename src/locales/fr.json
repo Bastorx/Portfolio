@@ -1,5 +1,5 @@
 {
-  "title": "Développeur Full Stack",
+  "title": "Développeur Web",
   "about": {
     "title": "À propos de moi",
     "info": {
@@ -9,7 +9,7 @@
       "website": "Site web"
     },
     "hello": "Hello There!",
-    "content": "Je suis un développeur full stack. Après cinq ans d'études à l'ETNA, Je me suis spécialisé autour des technologies Javascript et dans le développement web (back-end, front-end et mobile). Adorateur de technologies telles que React, React-Native, Typescript, Docker, Kubernetes. J'ai acquis un large éventail de compétences qui me permettent de travailler sur le web, le mobile, ou de mettre en place des architectures micro-services.",
+    "content": "Passionné depuis l’adolescence à la programmation, j’ai entrepris 5 années d’études à l’ETNA. Me concentrant dans un premier temps dans de la programmation bas niveau, j’ai très vite eu de nombreuses expériences dans le développement web à travers mes premiers stages, aussi bien front-end, back-end que DevOps; J’ai, à travers ces 5 ans d’études, porté plusieurs casquettes élargissant mon domaine de compétence.\n\nA la sortie de mes études, j’ai entrepris de devenir freelance. Je me définis ainsi comme étant un : freelance développeur web « full stack » (bien que je me sens peut-être un peu plus à l’aise côté back-end avec le temps). \n\nDans un premier temps je me suis spécialisé sur une stack autour de JavaScript car tout aussi utile dans le développement front et back (voire mobile): React.js, React-Native, Node.js, Typescript. Je me suis ensuite, ces dernières années, beaucoup intéressé à d’autres langages dans l’objectif de toujours pouvoir répondre à plus de problématique (notamment Golang, Rust). J’ai également travaillé en tant que DevOps dans certaines de mes missions, je maîtrise ainsi très bien Docker, Kubernetes, Firebase, GCP, Vercel et AWS.\n\nForce de proposition, la communication est pour moi une qualité très importante dans ce domaine c’est pourquoi je tends aussi à partager mes connaissances (à travers des cours, des articles ou bien de par ma présence à beaucoup de Meetup).\n\nFocus actuel : Golang / TypeScript / DevOps",
     "situation": "Actuellement en recherche passive."
   },
   "resume": {
@@ -35,7 +35,7 @@
         "company": "AWE",
         "period": "2018 (Janvier) - 2019 (Novembre)",
         "description": "Société de conseil, de technologie et de services marketing, AWE accompagne ses clients dans les domaines de la stratégie, du management de la data, du marketing de contenu, du marketing automation et du pilotage de la performance.",
-        "role": "Rôle: Développeur Full Stack dans le pôle R&D. Développement de dashboards. React, Typescript, MySQL, Google Clound Platform, Docker, Kubernetes & Skaffold"
+        "role": "Rôle: Développeur Full Stack dans le pôle R&D. Développement de dashboards. React, Typescript, Golang, MySQL, Google Clound Platform, Docker, Kubernetes & Skaffold"
       },
       "Beedeez": {
         "title": "Développeur Full Stack",

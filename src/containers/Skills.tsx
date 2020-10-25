@@ -40,16 +40,9 @@ export const SkillsComponent = ({ intl }: IProps) => {
         </div>
         <div className="row row-pb-md">
           <div className="col-md-3 col-sm-6 col-xs-12 text-center">
-            <div className="chart" data-percent="90">
+            <div className="chart" data-percent="85">
               <span>
-                <strong>HTML / CSS</strong>90%
-              </span>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
-            <div className="chart" data-percent="90">
-              <span>
-                <strong>Javascript</strong>90%
+                <strong>Go</strong>85%
               </span>
             </div>
           </div>
@@ -61,31 +54,24 @@ export const SkillsComponent = ({ intl }: IProps) => {
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12 text-center">
-            <div className="chart" data-percent="95">
+            <div className="chart" data-percent="85">
               <span>
-                <strong>React</strong>95%
+                <strong>C</strong>85%
+              </span>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div className="chart" data-percent="80">
+              <span>
+                <strong>Rust</strong>80%
               </span>
             </div>
           </div>
 
           <div className="col-md-3 col-sm-6 col-xs-12 text-center">
-            <div className="chart" data-percent="85">
+            <div className="chart" data-percent="90">
               <span>
-                <strong>React Native</strong>85%
-              </span>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
-            <div className="chart" data-percent="85">
-              <span>
-                <strong>MySQL</strong>85%
-              </span>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
-            <div className="chart" data-percent="85">
-              <span>
-                <strong>MongoDB</strong>85%
+                <strong>React.js<br />React Native</strong>90%
               </span>
             </div>
           </div>
@@ -96,9 +82,55 @@ export const SkillsComponent = ({ intl }: IProps) => {
               </span>
             </div>
           </div>
+          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div className="chart" data-percent="90">
+              <span>
+                <strong>Javascript</strong>90%
+              </span>
+            </div>
+          </div>
+          <div className="col-md-3 col-sm-6 col-xs-12 text-center">
+            <div className="chart" data-percent="90">
+              <span>
+                <strong>HTML / CSS</strong>90%
+              </span>
+            </div>
+          </div>
         </div>
         <div className="row">
           <div className="col-md-6">
+            <div className="progress-wrap">
+              <h3>
+                <span className="name-left">SQL (MySQL / PostgreSQL)</span>
+                <span className="value-right">85%</span>
+              </h3>
+              <div className="progress">
+                <div
+                  className="progress-bar progress-bar-1 progress-bar-striped active"
+                  role="progressbar"
+                  aria-valuenow={85}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{ width: "85%" }}
+                />
+              </div>
+            </div>
+            <div className="progress-wrap">
+              <h3>
+                <span className="name-left">MongoDB</span>
+                <span className="value-right">85%</span>
+              </h3>
+              <div className="progress">
+                <div
+                  className="progress-bar progress-bar-2 progress-bar-striped active"
+                  role="progressbar"
+                  aria-valuenow={85}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{ width: "85%" }}
+                />
+              </div>
+            </div>
             <div className="progress-wrap">
               <h3>
                 <span className="name-left">Docker</span>
@@ -106,7 +138,7 @@ export const SkillsComponent = ({ intl }: IProps) => {
               </h3>
               <div className="progress">
                 <div
-                  className="progress-bar progress-bar-1 progress-bar-striped active"
+                  className="progress-bar progress-bar-3 progress-bar-striped active"
                   role="progressbar"
                   aria-valuenow={90}
                   aria-valuemin={0}
@@ -122,44 +154,12 @@ export const SkillsComponent = ({ intl }: IProps) => {
               </h3>
               <div className="progress">
                 <div
-                  className="progress-bar progress-bar-2 progress-bar-striped active"
-                  role="progressbar"
-                  aria-valuenow={90}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  style={{ width: "90%" }}
-                />
-              </div>
-            </div>
-            <div className="progress-wrap">
-              <h3>
-                <span className="name-left">Go</span>
-                <span className="value-right">80%</span>
-              </h3>
-              <div className="progress">
-                <div
-                  className="progress-bar progress-bar-3 progress-bar-striped active"
-                  role="progressbar"
-                  aria-valuenow={80}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  style={{ width: "80%" }}
-                />
-              </div>
-            </div>
-            <div className="progress-wrap">
-              <h3>
-                <span className="name-left">PHP</span>
-                <span className="value-right">75%</span>
-              </h3>
-              <div className="progress">
-                <div
                   className="progress-bar progress-bar-4 progress-bar-striped active"
                   role="progressbar"
                   aria-valuenow={85}
                   aria-valuemin={0}
                   aria-valuemax={100}
-                  style={{ width: "75%" }}
+                  style={{ width: "85%" }}
                 />
               </div>
             </div>
