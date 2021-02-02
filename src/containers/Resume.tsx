@@ -35,7 +35,7 @@ const ResumeComponent = ({ intl }: IProps) => {
                       })}
                     </h3>
                     <span className="company">
-                      <a href="https://kardinal.ai/">
+                      <a href="https://www.aktome.fr/">
                         {intl.formatMessage({
                           id: "resume.workExperience.Aktome.company",
                         })}
