@@ -49,7 +49,7 @@ const ResumeComponent = ({ intl }: IProps) => {
                   <div className="timeline-body">
                     <p>
                       {intl.formatMessage({
-                        id: "resume.workExperience.Kardinal.description",
+                        id: "resume.workExperience.Aktome.description",
                       })}
                     </p>
                     <p>
