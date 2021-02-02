@@ -23,6 +23,43 @@ const ResumeComponent = ({ intl }: IProps) => {
                   </h3>
                 </div>
               </li>
+              <li className="animate-box timeline-inverted">
+                <div className="timeline-badge">
+                  <i className="icon-suitcase" />
+                </div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h3 className="timeline-title">
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Aktome.title",
+                      })}
+                    </h3>
+                    <span className="company">
+                      <a href="https://kardinal.ai/">
+                        {intl.formatMessage({
+                          id: "resume.workExperience.Aktome.company",
+                        })}
+                      </a>{" "}
+                      -{" "}
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Aktome.period",
+                      })}
+                    </span>
+                  </div>
+                  <div className="timeline-body">
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Kardinal.description",
+                      })}
+                    </p>
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Aktome.role",
+                      })}
+                    </p>
+                  </div>
+                </div>
+              </li>
               <li className="animate-box timeline-unverted">
                 <div className="timeline-badge">
                   <i className="icon-suitcase" />

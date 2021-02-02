@@ -16,10 +16,17 @@
     "title": "My Resume",
     "workExperience": {
       "title": "Work Experience",
+      "Aktome": {
+        "title": "Front End Developer",
+        "company": "Aktome",
+        "period": "2021 (January) - 2021 (February)",
+        "description": "At the service of experience collaborators. Because the problem is not always between the chair and the keyboard.",
+        "role": "Role: Front End Developer. Development of the payroll application in React.js. React, Redux, Typescript, Integration & unit tests"
+      },
       "Kardinal": {
         "title": "Full Stack JS Developer",
         "company": "Kardinal",
-        "period": "2020 (March) - 2020 (September)",
+        "period": "2020 (March) - 2020 (Novembre)",
         "description": "The companion solution for route optimization, based on top-notch technologies.",
         "role": "Role: Developer Full Stack JS. Development of micro-services in Golang, aggregation tool (Gateway) developed with NestJS Typescript, front end development with React, Redux, TypeScript"
       },

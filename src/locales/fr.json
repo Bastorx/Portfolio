@@ -16,10 +16,17 @@
     "title": "Mon CV",
     "workExperience": {
       "title": "Expérience Professionnelle",
+      "Aktome": {
+        "title": "Développeur Front End",
+        "company": "Aktome",
+        "period": "2021 (Janvier) - 2021 (Février)",
+        "description": "Au service de l'expérience collaborateurs. Parce que le problème n’est pas toujours entre la chaise et le clavier.",
+        "role": "Rôle: Développeur Front End. Développement de l'application paie en React.js. React, Redux, Typescript, Tests d'intégration & unitaire"
+      },
       "Kardinal": {
         "title": "Développeur Full Stack JS",
         "company": "Kardinal",
-        "period": "2020 (Mars) - 2020 (Septembre)",
+        "period": "2020 (Mars) - 2020 (Novembre)",
         "description": "La solution d’aide à la décision pour l’optimisation de tournées, basée sur des technologies de pointe.",
         "role": "Rôle: Développeur Full Stack JS. Développement de micro-services en Golang, d'un outil d'agrégation (Gateway) avec NestJS, Typescript, développement front end avec React, Redux, TypeScript"
       },
