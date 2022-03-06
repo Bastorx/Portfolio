@@ -31,6 +31,80 @@ const ResumeComponent = ({ intl }: IProps) => {
                   <div className="timeline-heading">
                     <h3 className="timeline-title">
                       {intl.formatMessage({
+                        id: "resume.workExperience.Quadient.title",
+                      })}
+                    </h3>
+                    <span className="company">
+                      <a href="https://www.quadient.com/">
+                        {intl.formatMessage({
+                          id: "resume.workExperience.Quadient.company",
+                        })}
+                      </a>{" "}
+                      -{" "}
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Quadient.period",
+                      })}
+                    </span>
+                  </div>
+                  <div className="timeline-body">
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Quadient.description",
+                      })}
+                    </p>
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Quadient.role",
+                      })}
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="animate-box timeline-unverted">
+                <div className="timeline-badge">
+                  <i className="icon-suitcase" />
+                </div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h3 className="timeline-title">
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Homeserve.title",
+                      })}
+                    </h3>
+                    <span className="company">
+                      <a href="https://www.homeserve.fr/">
+                        {intl.formatMessage({
+                          id: "resume.workExperience.Homeserve.company",
+                        })}
+                      </a>{" "}
+                      -{" "}
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Homeserve.period",
+                      })}
+                    </span>
+                  </div>
+                  <div className="timeline-body">
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Homeserve.description",
+                      })}
+                    </p>
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.Homeserve.role",
+                      })}
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="animate-box timeline-inverted">
+                <div className="timeline-badge">
+                  <i className="icon-suitcase" />
+                </div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h3 className="timeline-title">
+                      {intl.formatMessage({
                         id: "resume.workExperience.Aktome.title",
                       })}
                     </h3>

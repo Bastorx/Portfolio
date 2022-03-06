@@ -16,6 +16,20 @@
     "title": "My Resume",
     "workExperience": {
       "title": "Work Experience",
+      "Quadient": {
+        "title": "Back End Developer",
+        "company": "Quadient",
+        "period": "2021 (October) - 2022 (March)",
+        "description": "Quadient is a company specializing in logistics equipment and mail processing.",
+        "role": "Role: Back End Developer. Development of new features in Node.js, Python, ETL implementation with AWS tools, Integration & unit tests"
+      },
+      "Homeserve": {
+        "title": "Full Stack Developer",
+        "company": "Homeserve",
+        "period": "2021 (February) - 2021 (October)",
+        "description": "To protect the home of the French and allow them to have a simple and quick solution in case of failure, HomeServe offers its assistance contracts.",
+        "role": "Role: Full Stack Developer. Development of compatable administration tools in Python and modernization of the Front End application. Python, Typescript, Node.js, React, Integration & unit tests"
+      },
       "Aktome": {
         "title": "Front End Developer",
         "company": "Aktome",

@@ -16,6 +16,20 @@
     "title": "Mon CV",
     "workExperience": {
       "title": "Expérience Professionnelle",
+      "Quadient": {
+        "title": "Développeur Back End",
+        "company": "Quadient",
+        "period": "2021 (Octobre) - 2022 (Mars)",
+        "description": "Quadient est une entreprise spécialisée dans le matériel logistique et le traitement du courrier.",
+        "role": "Rôle: Développeur Back End. Développement de nouvelles fonctionnalité en Node.js, Python, mise en place d'ETL avec les outils AWS, Tests d'intégration & unitaire"
+      },
+      "Homeserve": {
+        "title": "Développeur Full Stack",
+        "company": "Homeserve",
+        "period": "2021 (Février) - 2021 (Octobre)",
+        "description": "Pour protéger la Maison des Français et leur permettre de disposer d’une solution simple et rapide en cas de panne, HomeServe propose ses contrats d’assistance.",
+        "role": "Rôle: Développeur Full Stack. Développement d'outils d'administration compatable en Python et modernisation de l'application Front End. Python, Typescript, Node.js, React, Tests d'intégration & unitaire"
+      },
       "Aktome": {
         "title": "Développeur Front End",
         "company": "Aktome",
