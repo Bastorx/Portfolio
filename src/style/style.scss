@@ -1,7 +1,6 @@
 @import "icomoon/icomoon";
 
-@import "bootstrap/bootstrap";
-@import "node_modules/react-flags-select/scss/react-flags-select";
+@import "bootstrap3/bootstrap";
 
 @import "colors";
 
@@ -9,7 +8,7 @@ $font-primary: 'Space Mono', Arial, serif;
 $font-secondary: 'Kaushan Script', cursive;
 
 // Overrides
-$grid-gutter-width: 40px !default; 
+$grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
@@ -59,20 +58,20 @@ $form-group-margin-bottom:       30px !default;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -84,13 +83,13 @@ $form-group-margin-bottom:       30px !default;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 
@@ -109,9 +108,9 @@ body {
 	height: 100%;
 	@include transition(.5s);
 	.offcanvas & {
-		overflow: hidden;	
+		overflow: hidden;
 		position: absolute;
-		
+
 		&:after {
 			@include transition(2s);
 			position: absolute;
@@ -529,7 +528,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		margin-bottom: 20px;
 		position: relative;
 		@media screen and (max-width: $screen-sm) {
-			margin-bottom: 4em;	
+			margin-bottom: 4em;
 		}
 		&:before, &:after{
 			content: " ";
@@ -758,7 +757,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	@media screen and(max-width: $screen-xs){
 		height: 270px;
-	}	
+	}
 	.desc{
 		display: table-cell;
 		vertical-align: middle;
@@ -1018,7 +1017,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		a{
 			color: $brand-black;
 		}
-		
+
 	}
 }
 .form-control {
@@ -1030,10 +1029,10 @@ h1, h2, h3, h4, h5, h6, figure {
 	border: none;
 	border: 2px solid rgba(0,0,0,.1);
 	font-size: 18px;
-	
+
 	font-weight: 300;
 	@include border-radius(4px);
-	
+
 	&:focus, &:active {
 		box-shadow: none;
 		border: 2px solid rgba(0,0,0,.8);
@@ -1088,7 +1087,7 @@ input[type="text"] {
 			text-decoration: none;
 			outline: none;
 		}
-	}	
+	}
 }
 
 
@@ -1293,15 +1292,7 @@ input[type="text"] {
 	top: 15px;
 	right: 20px;
 	z-index: 10;
-	.flag-select {
-		img {
-			top: 0px;
-		}
-		.arrow-down {
-			color: white;
-		}
-		.flag-option {
-			color: #4d4d4d;
-		}
+	div > button {
+		border: none;
 	}
 }

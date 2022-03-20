@@ -5,6 +5,9 @@ import { LanguageSelector } from "../components/LanguageSelector";
 
 import { IsMobile } from "../helpers";
 
+import coverImage from "../images/cover.jpg";
+import bastienImage from "../images/bastien.jpg";
+
 interface IProps {
   intl: any;
 }
@@ -25,7 +28,7 @@ const HeaderComponent = ({ intl }: IProps) => {
       className="fh5co-cover js-fullheight"
       role="banner"
       style={{
-        backgroundImage: `url(${require("../images/cover.jpg")}`,
+        backgroundImage: `url(${coverImage}`,
       }}
       data-stellar-background-ratio="0.5"
     >
@@ -44,7 +47,7 @@ const HeaderComponent = ({ intl }: IProps) => {
                 <div
                   className="profile-thumb"
                   style={{
-                    background: `url(${require("../images/bastien.jpg")}`,
+                    background: `url(${bastienImage}`,
                   }}
                 />
                 <h1>

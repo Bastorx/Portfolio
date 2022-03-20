@@ -4,6 +4,8 @@ import { Visible, Hidden } from "react-grid-system";
 
 import Layout from "../components/Layout";
 
+import corgiImage from "../images/corgi.jpg";
+
 const NotFoundPage = () => (
   <Layout>
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -16,7 +18,7 @@ const NotFoundPage = () => (
       >
         <img
           alt="404 Corgi"
-          src={require("../images/corgi.jpg")}
+          src={corgiImage}
           style={{
             maxWidth: "100vw",
             maxHeight: "100vh",

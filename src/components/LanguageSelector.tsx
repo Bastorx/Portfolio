@@ -27,7 +27,7 @@ const LanguageSelectorComponent = ({ intl }: IProps) => {
         FR: intl.formatMessage({ id: "languages.french" }),
       }}
       selectedSize={20}
-      defaultCountry={intl.locale === "fr" ? "FR" : "GB"}
+      selected={intl.locale === "fr" ? "FR" : "GB"}
       placeholder={intl.formatMessage({ id: "languages.selectLanguage" })}
       onSelect={onChange}
     />

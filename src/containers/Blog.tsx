@@ -2,6 +2,8 @@ import React from "react";
 import { injectIntl } from "gatsby-plugin-intl";
 import DevToSvg from "../images/dev-to.svg";
 
+import reactApollo from "../images/react-apollo.png";
+
 interface IProps {
   intl: any;
 }
@@ -28,7 +30,7 @@ const BlogComponent = ({ intl }: IProps) => {
                 href="https://dev.to/bastorx/many-ways-to-use-apollo-28l9"
                 className="blog-bg"
                 style={{
-                  backgroundImage: `url(${require("../images/react-apollo.png")})`,
+                  backgroundImage: `url(${reactApollo})`,
                   backgroundSize: "contain",
                   backgroundColor: "rgba(10, 216, 188, .23)",
                 }}
