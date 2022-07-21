@@ -34,7 +34,7 @@ const AboutComponent = ({ intl }: IProps) => {
                   {intl.formatMessage({ id: "about.info.phone" })}:
                 </span>
                 <span className="second-block">
-                  <a href="tel:+33612157463">(+33) 6 12 15 74 63</a>
+                  <a href="tel:+33757845005">(+33)07 57 84 50 05</a>
                 </span>
               </li>
               <li>
