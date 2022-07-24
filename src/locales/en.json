@@ -4,12 +4,14 @@
     "title": "About Me",
     "info": {
       "fullName": "Full Name",
+      "whatsApp": "WhatsApp",
+      "whatsAppWhy": "Currently abroad until the end of August, I am more easily accessible via WhatsApp",
       "phone": "Phone",
       "email": "Email",
       "website": "Website"
     },
     "hello": "Hello There!",
-    "content": "Passionate about programming since I was a teenager, I undertook 5 years of studies at ETNA. Focusing initially in low level programming, I quickly had many experiences in web development through my first internships, both front-end, back-end and DevOps; I have, through these 5 years of study, worn several hats expanding my field of expertise. \n\nAt the end of my studies, I started to become a freelancer. I define myself as a: freelance web developer \"full stack\" (although I may feel a little more comfortable with the back-end over time). \n\nAt first I specialized on a stack around JavaScript because it's just as useful in front and backend development (even mobile): React.js, React-Native, Node.js, Typescript. Then, in the last few years, I became very interested in other languages in order to be able to answer more and more problems (Golang, Rust, for example). I have also worked as a DevOps in some of my missions, so I master Docker, Kubernetes, Firebase, GCP, Vercel and AWS very well.\n\nCommunication is for me a very important quality in this field, that's why I also tend to share my knowledge (through courses, articles or by attending many Meetup events).\n\nCurrent focus: Golang / TypeScript / DevOps",
+    "content": "Passionate about programming since I was a teenager, I undertook 5 years of studies at ETNA. Focusing initially in low level programming, I quickly had many experiences in web development through my first internships, both front-end, back-end and DevOps; I have, through these 5 years of study, worn several hats expanding my field of expertise. \n\nAt the end of my studies, I started to become a freelancer. I define myself as a: freelance web developer \"full stack\" (although I may feel a little more comfortable with the back-end over time). \n\nAt first I specialized on a stack around JavaScript because it's just as useful in front and backend development (even mobile): React.js, React-Native, Node.js, Typescript. Then, in the last few years, I became very interested in other languages in order to be able to answer more and more problems (Golang, Rust, for example). I have also worked as a DevOps in some of my missions, so I master Docker, Kubernetes, Firebase, GCP, Vercel and AWS very well.\n\nCommunication is for me a very important quality in this field, that's why I also tend to share my knowledge (through courses, articles or by attending many Meetup events).\n\nCurrent focus: React / TypeScript / DevOps",
     "situation": "Currently in passive research."
   },
   "resume": {
