@@ -34,7 +34,7 @@ const AboutComponent = ({ intl }: IProps) => {
                   {intl.formatMessage({ id: "about.info.whatsApp" })}:
                 </span>
                 <span className="second-block">
-                  <a href="https://wa.me/33612157463">(+33)06 12 15 74 63</a>
+                  <a href="https://wa.me/33757845005">(+33)07 57 84 50 05</a>
                 </span>
               </li>
               <li>
