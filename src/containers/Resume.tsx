@@ -23,6 +23,43 @@ const ResumeComponent = ({ intl }: IProps) => {
                   </h3>
                 </div>
               </li>
+              <li className="animate-box timeline-unverted">
+                <div className="timeline-badge">
+                  <i className="icon-suitcase" />
+                </div>
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h3 className="timeline-title">
+                      {intl.formatMessage({
+                        id: "resume.workExperience.DNUM.title",
+                      })}
+                    </h3>
+                    <span className="company">
+                      <a href="https://www.quadient.com/">
+                        {intl.formatMessage({
+                          id: "resume.workExperience.DNUM.company",
+                        })}
+                      </a>{" "}
+                      -{" "}
+                      {intl.formatMessage({
+                        id: "resume.workExperience.DNUM.period",
+                      })}
+                    </span>
+                  </div>
+                  <div className="timeline-body">
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.DNUM.description",
+                      })}
+                    </p>
+                    <p>
+                      {intl.formatMessage({
+                        id: "resume.workExperience.DNUM.role",
+                      })}
+                    </p>
+                  </div>
+                </div>
+              </li>
               <li className="animate-box timeline-inverted">
                 <div className="timeline-badge">
                   <i className="icon-suitcase" />
@@ -105,43 +142,6 @@ const ResumeComponent = ({ intl }: IProps) => {
                   <div className="timeline-heading">
                     <h3 className="timeline-title">
                       {intl.formatMessage({
-                        id: "resume.workExperience.Aktome.title",
-                      })}
-                    </h3>
-                    <span className="company">
-                      <a href="https://www.aktome.fr/">
-                        {intl.formatMessage({
-                          id: "resume.workExperience.Aktome.company",
-                        })}
-                      </a>{" "}
-                      -{" "}
-                      {intl.formatMessage({
-                        id: "resume.workExperience.Aktome.period",
-                      })}
-                    </span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      {intl.formatMessage({
-                        id: "resume.workExperience.Aktome.description",
-                      })}
-                    </p>
-                    <p>
-                      {intl.formatMessage({
-                        id: "resume.workExperience.Aktome.role",
-                      })}
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li className="animate-box timeline-unverted">
-                <div className="timeline-badge">
-                  <i className="icon-suitcase" />
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">
-                      {intl.formatMessage({
                         id: "resume.workExperience.Kardinal.title",
                       })}
                     </h3>
@@ -166,43 +166,6 @@ const ResumeComponent = ({ intl }: IProps) => {
                     <p>
                       {intl.formatMessage({
                         id: "resume.workExperience.Kardinal.role",
-                      })}
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li className="animate-box timeline-inverted">
-                <div className="timeline-badge">
-                  <i className="icon-suitcase" />
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">
-                      {intl.formatMessage({
-                        id: "resume.workExperience.Visitadom.title",
-                      })}
-                    </h3>
-                    <span className="company">
-                      <a href="https://www.visitadom.fr">
-                        {intl.formatMessage({
-                          id: "resume.workExperience.Visitadom.company",
-                        })}
-                      </a>{" "}
-                      -{" "}
-                      {intl.formatMessage({
-                        id: "resume.workExperience.Visitadom.period",
-                      })}
-                    </span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      {intl.formatMessage({
-                        id: "resume.workExperience.Visitadom.description",
-                      })}
-                    </p>
-                    <p>
-                      {intl.formatMessage({
-                        id: "resume.workExperience.Visitadom.role",
                       })}
                     </p>
                   </div>
@@ -245,7 +208,7 @@ const ResumeComponent = ({ intl }: IProps) => {
                   </div>
                 </div>
               </li>
-              <li className="timeline-inverted animate-box">
+              <li className="animate-box timeline-inverted">
                 <div className="timeline-badge">
                   <i className="icon-suitcase" />
                 </div>
@@ -290,43 +253,6 @@ const ResumeComponent = ({ intl }: IProps) => {
                   <div className="timeline-heading">
                     <h3 className="timeline-title">
                       {intl.formatMessage({
-                        id: "resume.workExperience.One2Team.title",
-                      })}
-                    </h3>
-                    <span className="company">
-                      <a href="https://one2team.com">
-                        {intl.formatMessage({
-                          id: "resume.workExperience.One2Team.company",
-                        })}
-                      </a>{" "}
-                      -{" "}
-                      {intl.formatMessage({
-                        id: "resume.workExperience.One2Team.period",
-                      })}
-                    </span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      {intl.formatMessage({
-                        id: "resume.workExperience.One2Team.description",
-                      })}
-                    </p>
-                    <p>
-                      {intl.formatMessage({
-                        id: "resume.workExperience.One2Team.role",
-                      })}
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li className="animate-box timeline-inverted">
-                <div className="timeline-badge">
-                  <i className="icon-suitcase" />
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">
-                      {intl.formatMessage({
                         id: "resume.workExperience.Hairfie.title",
                       })}
                     </h3>
@@ -364,7 +290,7 @@ const ResumeComponent = ({ intl }: IProps) => {
                   </h3>
                 </div>
               </li>
-              <li className="timeline-unverted animate-box">
+              <li className="animate-box timeline-inverted">
                 <div className="timeline-badge">
                   <i className="icon-graduation-cap" />
                 </div>
@@ -396,7 +322,7 @@ const ResumeComponent = ({ intl }: IProps) => {
                   </div>
                 </div>
               </li>
-              <li className="animate-box timeline-inverted">
+              <li className="animate-box timeline-unverted">
                 <div className="timeline-badge">
                   <i className="icon-graduation-cap" />
                 </div>

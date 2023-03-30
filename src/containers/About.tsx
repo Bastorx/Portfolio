@@ -38,9 +38,6 @@ const AboutComponent = ({ intl }: IProps) => {
                 </span>
               </li>
               <li>
-                {intl.formatMessage({ id: "about.info.whatsAppWhy" })}
-              </li>
-              <li>
                 <span className="first-block">
                   {intl.formatMessage({ id: "about.info.phone" })}:
                 </span>
