@@ -31,22 +31,6 @@ const AboutComponent = ({ intl }: IProps) => {
               </li>
               <li>
                 <span className="first-block">
-                  {intl.formatMessage({ id: "about.info.whatsApp" })}:
-                </span>
-                <span className="second-block">
-                  <a href="https://wa.me/33757845005">(+33)07 57 84 50 05</a>
-                </span>
-              </li>
-              <li>
-                <span className="first-block">
-                  {intl.formatMessage({ id: "about.info.phone" })}:
-                </span>
-                <span className="second-block">
-                  <a href="tel:+33757845005">(+33)07 57 84 50 05</a>
-                </span>
-              </li>
-              <li>
-                <span className="first-block">
                   {intl.formatMessage({ id: "about.info.email" })}:
                 </span>
                 <span className="second-block">
