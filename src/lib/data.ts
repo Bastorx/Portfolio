@@ -44,11 +44,11 @@ export const PROFILE = {
     fr: "Développeur Full Stack avec plus de 9 ans d'expérience (TypeScript, React, Golang, Node.js, NestJS, Python, Docker). Spécialisé dans la réalisation d'applications web réactives et d'outils de visualisation en temps réel. Passionné par l'aéronautique (licence PPL en cours aux Ailes Lyonnaises) et l'intégration pragmatique d'outils d'IA pour booster la productivité.",
     en: "Senior Full Stack Developer with 9+ years of experience (TypeScript, React, Golang, Node.js, NestJS, Python, Docker). Focused on high-performance web applications and real-time visualization interfaces. Aviation enthusiast (PPL pilot license in progress) and keen on practical AI tools integration."
   },
-  location: "Lyon / Paris / Remote",
+  location: "Genève / Remote",
   socials: {
     github: "https://github.com/Bastorx",
     linkedin: "https://www.linkedin.com/in/bastien-chevallier/",
-    email: "me@bastienchevallier.com",
+    email: "bastienchevallier.com@gmail.com",
     phone: "(+33) 06 12 15 74 63",
     website: "https://bastienchevallier.com"
   },

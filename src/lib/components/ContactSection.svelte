@@ -112,7 +112,7 @@
 
         <div class="flex items-center gap-1.5 text-xs font-mono text-indigo-400/90 pl-4 border-l border-slate-800">
           <Plane class="w-3.5 h-3.5" />
-          <span>Lyon / Paris / Remote</span>
+          <span>{PROFILE.location}</span>
         </div>
       </div>
 
