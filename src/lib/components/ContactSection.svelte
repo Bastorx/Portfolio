@@ -7,7 +7,7 @@
     Copy, 
     Check, 
     Send, 
-    MessageSquare,
+    Phone,
     Plane,
     Sparkles
   } from 'lucide-svelte';
@@ -40,18 +40,18 @@
 
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-sky-500/30 bg-sky-950/60 text-sky-400 text-xs font-mono mb-6">
         <Sparkles class="w-3.5 h-3.5" />
-        <span>{lang === 'fr' ? 'Connectons-nous' : 'Get in Touch'}</span>
+        <span>{lang === 'fr' ? 'Contact' : 'Get in Touch'}</span>
       </div>
 
       <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
-        {lang === 'fr' ? 'Prêt à construire quelque chose de ' : 'Ready to build something '}
-        <span class="gradient-text">{lang === 'fr' ? 'remarquable ?' : 'extraordinary?'}</span>
+        {lang === 'fr' ? 'Échangeons sur vos ' : 'Let\'s discuss your '}
+        <span class="gradient-text">{lang === 'fr' ? 'projets' : 'projects'}</span>
       </h2>
 
       <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto mb-8 leading-relaxed">
         {lang === 'fr'
-          ? "Que ce soit pour un rôle de Tech Lead, la conception d'un système multi-agents IA ou un projet temps réel critique, échangeons sur vos défis."
-          : "Whether you need high-level Tech Leadership, an autonomous AI multi-agent swarm, or high-performance real-time architectures, let's talk."
+          ? "Développeur Full Stack expérimenté disponible pour échanger sur vos besoins techniques en développement web, temps réel ou automatisation."
+          : "Senior Full Stack developer available to discuss your technical challenges in web development, real-time tools, or automation."
         }
       </p>
 
@@ -63,7 +63,7 @@
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-semibold shadow-lg shadow-sky-500/20 transition-all hover:scale-105"
         >
           <Send class="w-4 h-4" />
-          <span>{lang === 'fr' ? 'Envoyer un email' : 'Send an Email'}</span>
+          <span>{lang === 'fr' ? 'M\'envoyer un message' : 'Send an Email'}</span>
         </a>
 
         <!-- Bouton Copier Email -->
@@ -81,8 +81,8 @@
         </button>
       </div>
 
-      <!-- Liens Réseaux Sociaux -->
-      <div class="flex items-center justify-center gap-6 pt-6 border-t border-slate-800/80">
+      <!-- Liens Réseaux Sociaux & Contact direct -->
+      <div class="flex flex-wrap items-center justify-center gap-6 pt-6 border-t border-slate-800/80">
         <a
           href={PROFILE.socials.github}
           target="_blank"
@@ -103,9 +103,16 @@
           <span class="font-mono">LinkedIn</span>
         </a>
 
+        {#if PROFILE.socials.phone}
+          <div class="flex items-center gap-1.5 text-xs font-mono text-slate-400">
+            <Phone class="w-3.5 h-3.5 text-sky-400" />
+            <span>{PROFILE.socials.phone}</span>
+          </div>
+        {/if}
+
         <div class="flex items-center gap-1.5 text-xs font-mono text-indigo-400/90 pl-4 border-l border-slate-800">
           <Plane class="w-3.5 h-3.5" />
-          <span>Paris / Remote / EASA PPL</span>
+          <span>Lyon / Paris / Remote</span>
         </div>
       </div>
 

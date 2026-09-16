@@ -20,7 +20,7 @@ export interface Experience {
   description: { fr: string; en: string };
   highlights: { fr: string[]; en: string[] };
   skills: string[];
-  type: 'lead' | 'fullstack' | 'ai';
+  type: 'lead' | 'fullstack' | 'backend';
 }
 
 export interface SkillCategory {
@@ -33,259 +33,337 @@ export interface SkillCategory {
 export const PROFILE = {
   name: "Bastien Chevallier",
   title: {
-    fr: "Lead Tech Full Stack & Architecte Solutions IA",
-    en: "Lead Full Stack Engineer & AI Solutions Architect"
+    fr: "Développeur Full Stack Senior",
+    en: "Senior Full Stack Engineer"
   },
   tagline: {
-    fr: "De la visualisation temps-réel aéronautique aux architectures multi-agents autonomes.",
-    en: "From mission-critical real-time aviation systems to autonomous multi-agent architectures."
+    fr: "Développement d'outils visuels temps réel, architectures web robustes et exploration pratique des technologies IA.",
+    en: "Building real-time visual tools, robust web architectures, and exploring practical AI integrations."
   },
   bio: {
-    fr: "Ingénieur logiciel expérimenté (Full Stack, Golang, TypeScript, React/Node, Python, Cloud/K8s) avec une solide expertise en systèmes temps réel, distribués et à haute fiabilité. Passionné par l'Intelligence Artificielle de pointe (agents autonomes, RAG, MCP, orchestration LLM) et pilote privé d'avion (PPL).",
-    en: "Senior software engineer (Full Stack, Golang, TypeScript, React/Node, Python, Cloud/K8s) specialized in mission-critical real-time and distributed architectures. Driving cutting-edge AI systems (autonomous agents, RAG, MCP, LLM pipelines) and licensed Private Pilot (PPL)."
+    fr: "Développeur Full Stack avec plus de 9 ans d'expérience (TypeScript, React, Golang, Node.js, NestJS, Python, Docker). Spécialisé dans la réalisation d'applications web réactives et d'outils de visualisation en temps réel. Passionné par l'aéronautique (licence PPL en cours aux Ailes Lyonnaises) et l'intégration pragmatique d'outils d'IA pour booster la productivité.",
+    en: "Senior Full Stack Developer with 9+ years of experience (TypeScript, React, Golang, Node.js, NestJS, Python, Docker). Focused on high-performance web applications and real-time visualization interfaces. Aviation enthusiast (PPL pilot license in progress) and keen on practical AI tools integration."
   },
-  location: "Paris / Remote",
+  location: "Lyon / Paris / Remote",
   socials: {
     github: "https://github.com/Bastorx",
-    linkedin: "https://www.linkedin.com/in/bastien-chevallier-45b14187/",
-    email: "contact@bastienchevallier.com",
+    linkedin: "https://www.linkedin.com/in/bastien-chevallier/",
+    email: "me@bastienchevallier.com",
+    phone: "(+33) 06 12 15 74 63",
     website: "https://bastienchevallier.com"
   },
   stats: [
-    { value: "10+", label: { fr: "Années d'expérience", en: "Years Experience" } },
-    { value: "100k+", label: { fr: "Utilisateurs servis", en: "Users Scaled" } },
-    { value: "99.99%", label: { fr: "SLA Systèmes critiques", en: "Mission-Critical SLA" } },
-    { value: "PPL", label: { fr: "Pilote Privé d'Avion", en: "Private Pilot License" } }
+    { value: "9+", label: { fr: "Années d'expérience", en: "Years Experience" } },
+    { value: "ATCO", label: { fr: "Visualisation Trafic Aérien", en: "Air Traffic Real-Time Visu" } },
+    { value: "Full Stack", label: { fr: "React • Golang • NestJS", en: "React • Golang • NestJS" } },
+    { value: "PPL(A)", label: { fr: "Élève Pilote Aéroclub", en: "Pilot License in progress" } }
   ]
 };
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    title: { fr: "Intelligence Artificielle & Automatisation", en: "AI Engineering & Automation" },
-    icon: "Bot",
-    description: {
-      fr: "Conception et déploiement d'écosystèmes d'agents IA, RAG haute précision et orchestration de workflows autonomes.",
-      en: "Designing & deploying multi-agent AI ecosystems, precision RAG pipelines, and autonomous workflow automation."
-    },
-    items: [
-      { name: "Autonomous Multi-Agents (OpenClaw / LangChain)", highlight: true },
-      { name: "MCP (Model Context Protocol)", highlight: true },
-      { name: "RAG & Vector Search (Chroma, pgvector)", highlight: true },
-      { name: "LLM Fine-tuning & Local Inference (Ollama)", highlight: true },
-      { name: "n8n Workflow Automation & Webhooks", highlight: true },
-      { name: "Prompt Engineering & Structured Output Evaluation" }
-    ]
-  },
-  {
-    title: { fr: "Architecture & Backend", en: "Architecture & Backend" },
-    icon: "Server",
-    description: {
-      fr: "Services scalables, systèmes distribués à faible latence et traitement de flux temps réel.",
-      en: "Scalable services, low-latency distributed systems, and real-time event streaming."
-    },
-    items: [
-      { name: "Golang (Go)", highlight: true },
-      { name: "TypeScript / Node.js / NestJS", highlight: true },
-      { name: "Python (FastAPI, PyTorch basics)", highlight: true },
-      { name: "PostgreSQL, Redis, MongoDB" },
-      { name: "gRPC, WebSockets, Kafka / RabbitMQ" },
-      { name: "GraphQL & RESTful Hypermedia APIs" }
-    ]
-  },
-  {
-    title: { fr: "Frontend & Expérience Utilisateur", en: "Frontend & Modern UI" },
+    title: { fr: "Frontend & Visualisation", en: "Frontend & Visualization" },
     icon: "Layout",
     description: {
-      fr: "Interfaces réactives ultra-fluides, dashboards temps réel, visualisation de données cartographiques et graphiques.",
-      en: "Ultra-fluid reactive interfaces, real-time dashboards, spatial/map & graphics data visualization."
+      fr: "Conception d'interfaces réactives, outils de visualisation en temps réel et dashboards de suivi.",
+      en: "Designing reactive interfaces, real-time visualization tools, and tracking dashboards."
     },
     items: [
-      { name: "Svelte 5 / Runes", highlight: true },
-      { name: "React, Next.js, Redux / Zustand", highlight: true },
-      { name: "Tailwind CSS & Design Systems", highlight: true },
-      { name: "Three.js / WebGL / Canvas", highlight: true },
-      { name: "GIS & Maps (OpenLayers, Leaflet, Mapbox)" },
-      { name: "Vite, Micro-frontends & Performance Web" }
+      { name: "React.js / Redux / Next.js", highlight: true },
+      { name: "TypeScript / JavaScript (ES6+)", highlight: true },
+      { name: "Svelte 5 / Vite", highlight: true },
+      { name: "Vue.js", highlight: false },
+      { name: "React-Native (Mobile)", highlight: true },
+      { name: "Tailwind CSS / SCSS" }
     ]
   },
   {
-    title: { fr: "DevOps, SRE & Sécurité", en: "DevOps, Cloud & SRE" },
+    title: { fr: "Backend & Microservices", en: "Backend & Microservices" },
+    icon: "Server",
+    description: {
+      fr: "Développement d'APIs REST, agrégateurs de données, microservices et gestion de bases de données.",
+      en: "Building REST APIs, data aggregators, microservices, and database management."
+    },
+    items: [
+      { name: "Golang (Gin)", highlight: true },
+      { name: "Node.js / Express / NestJS", highlight: true },
+      { name: "Python (Scripts, Automatisation)", highlight: true },
+      { name: "PostgreSQL, MongoDB, MySQL", highlight: true },
+      { name: "Tests unitaires & intégration (Jest, Go test)", highlight: true }
+    ]
+  },
+  {
+    title: { fr: "DevOps & Cloud", en: "DevOps & Cloud" },
     icon: "Cloud",
     description: {
-      fr: "Infrastructures conteneurisées, pipelines CI/CD résilients et monitoring de production.",
-      en: "Containerized infrastructure, resilient CI/CD pipelines, and production observability."
+      fr: "Conteneurisation, automatisation des déploiements et pipelines d'intégration continue.",
+      en: "Containerization, automated deployments, and continuous integration pipelines."
     },
     items: [
       { name: "Docker & Docker Compose", highlight: true },
-      { name: "Kubernetes (K8s) & Helm", highlight: true },
-      { name: "GitHub Actions CI/CD", highlight: true },
-      { name: "Linux Administration & Self-hosting (NAS / Bare Metal)" },
-      { name: "Cloudflare Workers & Tunnels" },
-      { name: "Observability (Prometheus, Grafana, OpenTelemetry)" }
+      { name: "CI/CD (GitHub Actions, GitLab CI)", highlight: true },
+      { name: "GCP (GKE, Cloud Build) & AWS (Glue, Athena)", highlight: false },
+      { name: "Kubernetes, Rancher, Skaffold", highlight: false },
+      { name: "Linux / Auto-hébergement" }
+    ]
+  },
+  {
+    title: { fr: "Exploration IA & Automatisation", en: "AI Exploration & Automation" },
+    icon: "Bot",
+    description: {
+      fr: "Intégration pratique d'assistants et d'outils IA dans les flux de développement et workflows automatisés.",
+      en: "Practical integration of AI assistants and LLM tools into developer workflows and automated pipelines."
+    },
+    items: [
+      { name: "Assistance au code & Pair-Programming IA", highlight: true },
+      { name: "Automatisations de workflows (n8n, Webhooks)", highlight: true },
+      { name: "Découverte des concepts d'agents & protocoles (MCP)", highlight: true },
+      { name: "Prompting pragmatique & structuré", highlight: false }
     ]
   }
 ];
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: "SkySoft-ATM (Suisse)",
+    company: "SkySoft-ATM (Genève, Suisse)",
     role: {
-      fr: "Lead Tech & Développeur Senior Full-Stack",
-      en: "Lead Tech & Senior Full-Stack Engineer"
+      fr: "Développeur Full Stack",
+      en: "Full Stack Developer"
     },
-    period: "2021 — 2024",
-    location: "Genève (Suisse) / Remote",
+    period: "Mai 2023 — En cours",
+    location: "Genève / Remote",
     description: {
-      fr: "Conception et évolution d'applications critiques de contrôle du trafic aérien (ATC) et de visualisation radar/cartographique temps réel pour les tours de contrôle internationales.",
-      en: "Architecture & development of mission-critical Air Traffic Control (ATC) recording, surveillance, and real-time radar mapping software for international airport towers."
+      fr: "Conception et développement d'outils visuels destinés aux ATCO (Aiguilleurs du ciel) pour la visualisation en temps réel du trafic aérien.",
+      en: "Design and development of real-time visual tools dedicated to ATCOs (Air Traffic Controllers) for air traffic surveillance and operations."
     },
     highlights: {
       fr: [
-        "Architecture temps réel haute résilience à tolérance de panne avec WebSockets et flux streaming vidéo/radar",
-        "Visualisation cartographique complexe et rendu haute performance multi-écrans",
-        "Mentoring d'équipe, revue de code rigoureuse et conformité aux standards de sécurité aéronautique",
-        "Refonte vers des stacks modernes TypeScript / React et services distribués haute performance"
+        "Développement d'outils de visualisation en temps réel du trafic aérien",
+        "Conception front-end réactive et synchronisation des flux de données",
+        "Mise en place de tests unitaires et d'intégration rigoureux"
       ],
       en: [
-        "High-resilience fault-tolerant real-time architecture utilizing streaming video/radar and low-latency WebSockets",
-        "Complex spatial/GIS visualization and ultra-smooth multi-display rendering",
-        "Engineering mentorship, strict code reviews, and air traffic safety compliance",
-        "Modernization toward high-performance TypeScript/React frontend and distributed services"
+        "Development of real-time visual air traffic monitoring tools",
+        "High-performance reactive frontend interfaces and data synchronization",
+        "Thorough unit and integration testing"
       ]
     },
-    skills: ["TypeScript", "React", "Node.js", "WebSockets", "GIS / Canvas", "Docker", "SRE"],
-    type: "lead"
+    skills: ["Golang", "TypeScript", "Node.js", "React.js", "Docker", "Tests unitaires"],
+    type: "fullstack"
   },
   {
     company: "Ministère de l'Intérieur",
     role: {
-      fr: "Ingénieur Concepteur Full-Stack",
-      en: "Full-Stack Software Engineer"
+      fr: "Développeur Full Stack",
+      en: "Full Stack Developer"
     },
-    period: "2020 — 2021",
-    location: "Paris, France",
+    period: "Septembre 2022 — Avril 2023",
+    location: "Remote",
     description: {
-      fr: "Développement d'outils stratégiques internes de gestion des opérations et de suivi de données sensibles sous haute contrainte de sécurité.",
-      en: "Development of sensitive internal operational management systems and data governance platforms under high government security clearance."
+      fr: "Réalisation d'un outil de bibliothèque de démarches simplifiées from scratch (plateforme liée au contrôle des investissements étrangers).",
+      en: "Development from scratch of a simplified procedures portal and foreign investment tracking platform."
     },
     highlights: {
       fr: [
-        "Conception de microservices sécurisés et d'APIs REST robustes",
-        "Mise en place d'interfaces utilisateurs claires pour les opérateurs de terrain",
-        "Optimisation des requêtes de bases de données et gestion fine des habilitations RBAC"
+        "Développement complet from scratch du back-end avec NestJS et PostgreSQL",
+        "Développement du front-end en Vue.js",
+        "Mise en place complète des tests unitaires et d'intégration sous Docker"
       ],
       en: [
-        "Designed secured microservices and resilient REST APIs",
-        "Built responsive, accessible interfaces for field operators and decision-makers",
-        "Database query tuning and granular Role-Based Access Control (RBAC)"
+        "Engineered the full backend from scratch using NestJS and PostgreSQL",
+        "Built the user-facing frontend with Vue.js",
+        "Configured containerized testing and CI workflows with Docker"
       ]
     },
-    skills: ["Golang", "TypeScript", "React", "PostgreSQL", "Docker", "SecOps"],
+    skills: ["TypeScript", "NestJS", "Node.js", "Vue.js", "PostgreSQL", "Docker"],
     type: "fullstack"
   },
   {
-    company: "Quadient (ex-Neopost)",
+    company: "Quadient",
     role: {
-      fr: "Ingénieur Logiciel Full-Stack & Big Data",
-      en: "Full-Stack & Big Data Software Engineer"
+      fr: "Développeur Back End",
+      en: "Back End Developer"
     },
-    period: "2018 — 2020",
-    location: "Bagneux, France",
+    period: "Octobre 2021 — Août 2022",
+    location: "Remote",
     description: {
-      fr: "Plateforme cloud de gestion des flux documentaires et d'analyse de données massives (Customer Experience Management).",
-      en: "Enterprise cloud platform for document workflow automation and massive data analytics (Customer Experience Management)."
+      fr: "Développement de nouvelles fonctionnalités logistiques pour la gestion et le suivi des flux de livraison de colis (matériel logistique & traitement de courrier).",
+      en: "Backend development for parcel delivery tracking and smart logistics systems (parcel lockers and mailing solutions)."
     },
     highlights: {
       fr: [
-        "Traitement et ingestion de millions de documents par jour via pipelines ETL asynchrones",
-        "Développement de microservices scalables et dashboards interactifs d'analytics",
-        "Intégration continue, tests de charge automatisés et déploiement multi-tenant"
+        "Développement de fonctionnalités back-end pour la gestion logistique de colis",
+        "Mise en place d'un nouveau dashboard de suivi avec pipeline ETL",
+        "Traitement de données avec AWS (Glue, Athena) et tests automatisés"
       ],
       en: [
-        "Ingestion & processing of millions of documents daily via asynchronous ETL pipelines",
-        "Built scalable microservices and interactive data analytics dashboards",
-        "Continuous integration, automated load testing, and multi-tenant deployments"
+        "Developed backend features for parcel delivery workflows and logistics",
+        "Created an analytics and monitoring dashboard backed by an ETL pipeline",
+        "Data processing using AWS services (Glue, Athena) and integration testing"
       ]
     },
-    skills: ["TypeScript", "Node.js", "Angular / React", "MongoDB", "RabbitMQ", "Microservices"],
+    skills: ["TypeScript", "Node.js", "Python", "AWS (Glue, Athena)", "ETL", "Tests automatisés"],
+    type: "backend"
+  },
+  {
+    company: "HomeServe",
+    role: {
+      fr: "Développeur Full Stack",
+      en: "Full Stack Developer"
+    },
+    period: "Janvier 2021 — Octobre 2021",
+    location: "Lyon, France",
+    description: {
+      fr: "Automatisation de la gestion comptable, maintenance du code existant et amorce de migration vers React pour la plateforme d'assistance à l'habitat.",
+      en: "Accounting automation scripts, maintenance of core platform code, and initiating migration to React for home assistance contracts."
+    },
+    highlights: {
+      fr: [
+        "Développement de scripts d'automatisation comptable en Python",
+        "Ajout de nouvelles fonctionnalités en React dans l'optique de la migration",
+        "Maintenance applicative du socle existant en AngularJS"
+      ],
+      en: [
+        "Automated accounting and financial processes using custom Python scripts",
+        "Engineered new customer features in React as part of a front-end modernization plan",
+        "Maintained existing AngularJS legacy platform and added test coverage"
+      ]
+    },
+    skills: ["Python", "TypeScript", "React", "AngularJS", "Tests unitaires"],
     type: "fullstack"
   },
   {
     company: "Kardinal",
     role: {
-      fr: "Développeur Full-Stack (Optimisation algorithmique)",
-      en: "Full-Stack Engineer (Route Optimization SaaS)"
+      fr: "Développeur Full Stack",
+      en: "Full Stack Developer"
     },
-    period: "2017 — 2018",
-    location: "Paris, France",
+    period: "Décembre 2019 — Décembre 2020",
+    location: "Remote",
     description: {
-      fr: "SaaS innovant d'optimisation en temps réel de tournées logistiques basé sur la recherche opérationnelle et l'algorithmique avancée.",
-      en: "SaaS platform optimizing logistics route planning in real-time using advanced operational research algorithms."
+      fr: "Solution SaaS d'optimisation des tournées de livraison en amont et en temps réel en fonction du trafic et des imprévus.",
+      en: "SaaS route optimization platform solving last-mile delivery scheduling in advance and in real-time based on live road conditions."
     },
     highlights: {
       fr: [
-        "Interface de visualisation spatio-temporelle de flottes de véhicules sur cartes dynamiques",
-        "Communication réactive avec le moteur de calcul d'optimisation sous contraintes",
-        "Amélioration des performances de rendu cartographique pour des milliers de points simultanés"
+        "Responsable du développement de l'interface utilisateur en React.js",
+        "Développement d'un agrégateur de données NestJS / TypeScript pour centraliser les microservices",
+        "Développement de microservices en Golang (Gin), incluant l'authentification et l'agrégateur d'événements",
+        "Architecture de microservices orchestrée avec Docker et Rancher, CI/CD sur GitLab-CI"
       ],
       en: [
-        "Dynamic spatio-temporal fleet dispatching & route visualization on interactive maps",
-        "Real-time event streaming with constrained optimization calculation engines",
-        "Optimized client-side spatial map rendering for thousands of simultaneous waypoints"
+        "Led the frontend application development in React.js",
+        "Engineered a NestJS/TypeScript data aggregator unifying multiple microservices",
+        "Built microservices in Golang (Gin), including authentication and event streaming services",
+        "Set up microservice architecture using Docker and Rancher, with GitLab-CI pipelines"
       ]
     },
-    skills: ["JavaScript / TypeScript", "React", "Node.js", "Leaflet / Mapbox", "Algorithms"],
+    skills: ["Golang", "Gin", "TypeScript", "NestJS", "React.js", "MongoDB", "PostgreSQL", "Docker", "Rancher"],
+    type: "fullstack"
+  },
+  {
+    company: "AWE",
+    role: {
+      fr: "Développeur Full Stack & DevOps",
+      en: "Full Stack Developer & DevOps"
+    },
+    period: "Janvier 2018 — Novembre 2019",
+    location: "Levallois-Perret, France",
+    description: {
+      fr: "Conseil et technologies marketing : développement d'un dashboard analytique d'agrégation de données et gestion d'infrastructure cloud.",
+      en: "Marketing technology & analytics: developed data aggregation dashboards to measure client campaign impact and managed cloud infrastructure."
+    },
+    highlights: {
+      fr: [
+        "Migration de la plateforme d'AngularJS vers React.js et formation de l'équipe",
+        "DevOps : conteneurisation Docker, Kubernetes sur GCP (GKE) et CI/CD avec GitHub Actions / Cloud Build",
+        "Développement d'outils internes et APIs back-end en TypeScript et PHP"
+      ],
+      en: [
+        "Migrated legacy AngularJS frontends to React.js and trained the engineering team",
+        "DevOps: Docker containers, Kubernetes on GCP (GKE), and CI/CD automation with GitHub Actions",
+        "Built internal tooling and backend APIs in TypeScript and PHP"
+      ]
+    },
+    skills: ["TypeScript", "React.js", "Docker", "Kubernetes (GKE)", "GitHub Actions", "PHP", "MySQL"],
+    type: "fullstack"
+  },
+  {
+    company: "Beedeez",
+    role: {
+      fr: "Développeur Full Stack Web & Mobile",
+      en: "Full Stack Web & Mobile Developer"
+    },
+    period: "Octobre 2016 — Décembre 2017",
+    location: "Paris, France",
+    description: {
+      fr: "Plateforme de micro-apprentissage mobile en entreprise.",
+      en: "Corporate mobile micro-learning and training platform."
+    },
+    highlights: {
+      fr: [
+        "Développement de l'application mobile en React-Native",
+        "Création du back-office pour les formateurs en React.js",
+        "Développement de l'API Node.js avec MongoDB"
+      ],
+      en: [
+        "Developed cross-platform mobile application using React-Native",
+        "Built trainer back-office in React.js",
+        "Developed REST API with Node.js and MongoDB"
+      ]
+    },
+    skills: ["React-Native", "React.js", "TypeScript", "Node.js", "MongoDB"],
     type: "fullstack"
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    id: "autonomous-ai-agents",
-    title: "Autonomous Multi-Agent AI System",
-    category: { fr: "IA & Systèmes Autonomes", en: "AI & Autonomous Systems" },
+    id: "skysoft-visu",
+    title: "Outils de Visualisation Trafic Aérien (SkySoft-ATM)",
+    category: { fr: "Visualisation Temps Réel", en: "Real-Time Visualization" },
     description: {
-      fr: "Architecture orchestrée de multi-agents collaboratifs spécialisés (Recherche de marché, Lead Developer, Architecte QA, SRE). Intégration de MCP (Model Context Protocol), mémoire vectorielle RAG et exécution d'outils sandboxés.",
-      en: "Orchestrated collaborative multi-agent architecture (Market Scout, Lead Dev, QA Architect, SRE). Deep integration with Model Context Protocol (MCP), vector RAG memory, and sandboxed autonomous tool execution."
+      fr: "Développement d'outils visuels interactifs et réactifs destinés aux aiguilleurs du ciel (ATCO) pour surveiller et suivre la situation du trafic aérien en temps réel.",
+      en: "Interactive and reactive visual tools for air traffic controllers (ATCO) to monitor real-time air traffic situations with zero lag."
     },
-    tags: ["OpenClaw", "TypeScript", "LangChain", "MCP", "RAG", "Ollama", "Docker"],
-    metrics: { fr: "8x gain de productivité R&D", en: "8x R&D velocity boost" },
+    tags: ["Golang", "TypeScript", "React.js", "Node.js", "Docker"],
+    metrics: { fr: "Temps réel critique", en: "Mission-critical real-time" },
     featured: true
   },
   {
-    id: "aero-navigator",
-    title: "AeroNav - PPL Flight Assistant",
-    category: { fr: "Aéronautique & Mobile", en: "Aviation & Real-Time" },
+    id: "kardinal-dispatch",
+    title: "Optimisation de Tournées en Temps Réel (Kardinal)",
+    category: { fr: "SaaS Logistique & Algorithmes", en: "Logistics SaaS" },
     description: {
-      fr: "Assistant de vol et de préparation de navigation pour pilotes privés VFR : calcul de carburant, centrage/masse, vents en altitude, NOTAMs temps réel et déroutement d'urgence.",
-      en: "In-flight assistance & pre-flight planning application for VFR pilots: dynamic weight & balance, winds aloft, live METAR/TAF/NOTAMs, and diversion calculations."
+      fr: "Interface React complète et agrégateur de données NestJS / microservices Golang pour visualiser et recalculer dynamiquement les itinéraires de livraison face aux imprévus de circulation.",
+      en: "React interface and NestJS data aggregator connected to Golang microservices dynamically adjusting parcel delivery routes based on live traffic events."
     },
-    tags: ["TypeScript", "Svelte", "OpenLayers", "WebSockets", "PPL VFR"],
-    metrics: { fr: "Conforme DGAC / OACI", en: "DGAC / ICAO Compliant" },
+    tags: ["React.js", "Golang", "Gin", "NestJS", "PostgreSQL", "Docker"],
+    metrics: { fr: "Microservices Golang & NestJS", en: "Golang & NestJS microservices" },
     featured: true
   },
   {
-    id: "realtime-radar-streamer",
-    title: "High-FPS Air Traffic Radar Replay",
-    category: { fr: "Temps Réel & Systèmes Critiques", en: "Real-Time & Systems" },
+    id: "quadient-parcels",
+    title: "Suivi Logistique & Dashboard ETL (Quadient)",
+    category: { fr: "Backend & Data", en: "Backend & Data Pipeline" },
     description: {
-      fr: "Moteur de synchronisation et relecture multi-canaux de flux radar ASTERIX et communications audio/vidéo ATC à 60 FPS avec scrubbing temporel instantané.",
-      en: "Multi-channel synchronization and replay engine for ASTERIX radar surveillance data & ATC audio/video streams at 60 FPS with zero-latency scrubbing."
+      fr: "Conception de services back-end pour la gestion de colis et mise en place d'un dashboard de suivi des flux logistiques adossé à un pipeline ETL avec AWS.",
+      en: "Backend logistics services for parcel management and an analytics dashboard powered by an ETL pipeline utilizing AWS services."
     },
-    tags: ["Golang", "TypeScript", "WebAssembly", "WebGL / Canvas", "gRPC"],
-    metrics: { fr: "< 16ms latence de rendu", en: "< 16ms render latency" },
-    featured: true
+    tags: ["TypeScript", "Node.js", "Python", "AWS Glue/Athena", "ETL"],
+    metrics: { fr: "Pipeline ETL & Suivi", en: "ETL & Tracking Dashboard" },
+    featured: false
   },
   {
     id: "n8n-smart-automations",
-    title: "Autonomous Enterprise Pipeline & n8n Hub",
-    category: { fr: "Automatisation & DevOps", en: "Automation & DevOps" },
+    title: "Automatisations de Workflows & Intégration IA",
+    category: { fr: "Productivité & IA", en: "Productivity & AI" },
     description: {
-      fr: "Hub d'automatisation couplé à n8n pour interconnecter webhooks, alertes, monitoring de serveurs NAS, synchronisation cloud et résumés LLM quotidiens.",
-      en: "Automated event hub bridging n8n workflows, webhook ingestion, self-hosted NAS monitoring, Cloudflare tunnels, and daily synthesized LLM briefings."
+      fr: "Mise en place de workflows automatisés avec n8n et exploration des intégrations LLM (aide au développement, alertes automatiques et orchestration de tâches).",
+      en: "Automated workflow setups with n8n combined with practical LLM integrations (developer tooling, automated alerts, and task orchestration)."
     },
-    tags: ["n8n", "Docker", "Node.js", "Webhooks", "Cloudflare", "NAS"],
-    metrics: { fr: "100% autonome & auto-hébergé", en: "100% self-hosted & resilient" },
+    tags: ["n8n", "Docker", "Node.js", "Webhooks", "IA Assistive"],
+    metrics: { fr: "Workflows automatisés", en: "Automated workflows" },
     featured: false
   }
 ];
